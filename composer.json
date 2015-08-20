@@ -1,0 +1,13 @@
+{
+    "name": "ignatenkov/parser-yandex-weather",
+    "description": "Parser Yandex Weather",
+    "require": {
+        "phpunit/phpunit": "4.8.*"
+    },
+    "authors": [
+        {
+            "name": "ignatenkov",
+            "email": "g.kiting@gmail.com"
+        }
+    ]
+}
