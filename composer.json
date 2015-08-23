@@ -2,7 +2,13 @@
     "name": "ignatenkov/parser-yandex-weather",
     "description": "Parser Yandex Weather",
     "require": {
+	"php": ">=5.3.0",
         "phpunit/phpunit": "4.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "YandexWeather\\": "src"
+        }
     },
     "authors": [
         {
