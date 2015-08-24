@@ -1173,23 +1173,23 @@ $city = $parser->getResult();
         <div class="current-weather">
             <div class="current-weather__today">Сейчас <span class="current-weather__local-time"><?=date("H:i")?></span></div>
             <span class="current-weather__col current-weather__col_type_now t t_c_13"><i
-                    class="icon icon_size_48 icon_thumb_ovc" data-width="48"></i><span class="current-weather__comment">пасмурно</span><div
+                    class="icon icon_size_48 icon_thumb_<?=$city->fact->getIcon()?>" data-width="48"></i><span class="current-weather__comment">пасмурно</span><div
                     class="current-weather__thermometer current-weather__thermometer_type_now"><?=$city->fact->temperature?> °C
                 </div></span><span class="current-weather__col current-weather__col_type_after t t_c_8"><span
-                    class="current-weather__thermometer-name">ночью</span><i class="icon icon_thumb_skc-n icon_size_30"
+                    class="current-weather__thermometer-name">ночью</span><i class="icon icon_thumb_<?=$city->getCurrentDay()->night->getIcon()?> icon_size_30"
                                                                              data-width="30"></i><div
-                    class="current-weather__thermometer current-weather__thermometer_type_after"><?=$city->getCurrentDay()->morning->temperature_avg?>
+                    class="current-weather__thermometer current-weather__thermometer_type_after"><?=$city->getCurrentDay()->night->temperature_avg?>
                 </div></span><span class="current-weather__col current-weather__col_type_after t t_c_11"><span
-                    class="current-weather__thermometer-name">днём</span><i class="icon icon_thumb_bkn-d icon_size_30"
+                    class="current-weather__thermometer-name">днём</span><i class="icon icon_thumb_<?=$city->getCurrentDay()->day->getIcon()?> icon_size_30"
                                                                              data-width="30"></i><div
                     class="current-weather__thermometer current-weather__thermometer_type_after"><?=$city->getCurrentDay()->day->temperature_avg?>
                 </div></span><span class="current-weather__col current-weather__info"><div class="current-weather__info-row">
                     <span class="current-weather__info-label">Восход: </span><?=$city->getCurrentDay()->sunrise?><span
                         class="current-weather__info-label current-weather__info-label_type_sunset">Закат: </span><?=$city->getCurrentDay()->sunset?>
                 </div><div class="current-weather__info-row current-weather__info-row_type_wind"><span
-                        class="current-weather__info-label">Ветер: </span> <span class="wind-speed"><?=$city->fact->wind_speed?> м/с</span> <!--<abbr
-                        class=" icon-abbr" title="Ветер: северо-восточный">СВ</abbr><i
-                        class="icon icon_size_12 icon_wind_ne icon_wind" data-width="12"></i>--><?=$city->fact->getWindDirection()?></div><div
+                        class="current-weather__info-label">Ветер: </span> <span class="wind-speed"><?=$city->fact->wind_speed?> м/с</span> <abbr
+                        class=" icon-abbr" title="Ветер: северо-восточный"><?=$city->fact->getWindDirection()?></abbr><i
+                        class="icon icon_size_12 icon_wind_<?=$city->fact->wind_direction?> icon_wind" data-width="12"></i></div><div
                     class="current-weather__info-row"><span class="current-weather__info-label">Влажность: </span><?=$city->fact->humidity?>%
                 </div><div class="current-weather__info-row"><span class="current-weather__info-label">Давление: </span><?=$city->fact->pressure?> мм
                     рт. ст.
@@ -1203,6 +1203,10 @@ $city = $parser->getResult();
             <div class="tabs-panes__pane tabs-panes__pane_active_yes" role="tabpanel" aria-labelledby="forecasts-tab-0"
                  aria-expanded="true">
                 <ul class="forecast-brief forecast-item">
+                    <?php
+
+                    foreach ($city->days as $key => $day) {
+                        echo <<<BLOCK
                     <li class="forecast-brief__item">
                         <div class="forecast-brief__item-date"><span
                                 class="forecast-brief__item-dayname">завтра</span><span
@@ -1218,7 +1222,32 @@ $city = $parser->getResult();
                             ночью
                         </div>
                     </li>
-                    <li class="forecast-brief__item">
+BLOCK;
+
+
+
+                        if(\YandexWeather\Models\Day::CheckSaturday($key))
+                            echo '<li class="forecast-brief__item forecast-brief__item_gap">&nbsp;</li>';
+
+                    }
+
+                    ?>
+                    <!--<li class="forecast-brief__item">
+                        <div class="forecast-brief__item-date"><span
+                                class="forecast-brief__item-dayname">завтра</span><span
+                                class="forecast-brief__item-day">24 августа</span></div>
+                        <div class="forecast-brief__item-description t t_c_17"><i
+                                class="icon icon_thumb_bkn-d icon_size_30" data-width="30"></i>
+
+                            <div class="forecast-brief__item-comment">облачно с прояснениями</div>
+                            <div class="forecast-brief__item-temp-day" title="Максимальная температура днём">+17 днём
+                            </div>
+                        </div>
+                        <div class="forecast-brief__item-temp-night t t_c_9" title="Минимальная температура ночью">+9
+                            ночью
+                        </div>
+                    </li>-->
+                    <!--<li class="forecast-brief__item">
                         <div class="forecast-brief__item-date"><span class="forecast-brief__item-dayname">вт</span><span
                                 class="forecast-brief__item-day">25</span></div>
                         <div class="forecast-brief__item-description t t_c_22"><i
@@ -1298,9 +1327,9 @@ $city = $parser->getResult();
                         <div class="forecast-brief__item-temp-night t t_c_11" title="Минимальная температура ночью">
                             +11
                         </div>
-                    </li>
+                    </li>-->
                     <li class="forecast-brief__item forecast-brief__item_gap">&nbsp;</li>
-                    <li class="forecast-brief__item">
+                    <!--<li class="forecast-brief__item">
                         <div class="forecast-brief__item-date"><span class="forecast-brief__item-dayname">пн</span><span
                                 class="forecast-brief__item-day">31 августа</span></div>
                         <div class="forecast-brief__item-description t t_c_17"><i
@@ -1325,7 +1354,7 @@ $city = $parser->getResult();
                         <div class="forecast-brief__item-temp-night t t_c_10" title="Минимальная температура ночью">
                             +10
                         </div>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <div class="tabs-panes__pane" role="tabpanel" aria-labelledby="forecasts-tab-1" aria-expanded="false">

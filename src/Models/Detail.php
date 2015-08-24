@@ -34,23 +34,41 @@ class Detail {
     public $ipad_image;
 
 
+    /**
+     * Get current time
+     * @return bool|string
+     */
     public function getObservationTime() {
         return $time = date("H:i",strtotime($this->observation_time));
     }
 
+    /**
+     * Get icon for weather
+     * @return mixed
+     */
+    public function getIcon() {
+        return str_replace("_", "-", $this->image_v3);
+    }
+
+    /**
+     * Get wind direction
+     * @return mixed
+     */
     public function getWindDirection() {
         $windDirection =  [
-            's'=>'&#8593; ю',
-            'n'=>'&#8595; с',
-            'w'=>'&#8594; з',
-            'e'=>'&#8592; в',
-            'sw'=>'&#8599; юз',
-            'se'=>'&#8598; юв',
-            'nw'=>'&#8600; сз',
-            'ne'=>'&#8601; св'];
+            's'=>'Ю',
+            'n'=>'С',
+            'w'=>'З',
+            'e'=>'В',
+            'sw'=>'ЮЗ',
+            'se'=>'ЮВ',
+            'nw'=>'СЗ',
+            'ne'=>'СВ'];
 
         if(isset($windDirection[$this->wind_direction]))
             return $windDirection[$this->wind_direction];
+
+        return null;
 
     }
 

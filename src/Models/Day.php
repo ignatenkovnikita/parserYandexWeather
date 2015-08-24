@@ -28,6 +28,14 @@ class Day{
     public $day_short;
     public $night_short;
 
+
+    public static function CheckSaturday($value)
+    {
+        if (date('w', strtotime($value)) == 6)
+            return true;
+        else
+            return false;
+    }
     /*public function __construct($data) {
         foreach ($data as $key => $value) {
             $this->{$key} = $value;
