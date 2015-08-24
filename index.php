@@ -1205,29 +1205,35 @@ $city = $parser->getResult();
                 <ul class="forecast-brief forecast-item">
                     <?php
 
-                    foreach ($city->days as $key => $day) {
-                        echo <<<BLOCK
-                    <li class="forecast-brief__item">
-                        <div class="forecast-brief__item-date"><span
-                                class="forecast-brief__item-dayname">завтра</span><span
-                                class="forecast-brief__item-day">24 августа</span></div>
-                        <div class="forecast-brief__item-description t t_c_17"><i
-                                class="icon icon_thumb_bkn-d icon_size_30" data-width="30"></i>
 
-                            <div class="forecast-brief__item-comment">облачно с прояснениями</div>
-                            <div class="forecast-brief__item-temp-day" title="Максимальная температура днём">+17 днём
+
+                    foreach ($city->getListDays() as $key => $day) {
+
+
+                        echo '<li class="forecast-brief__item">
+                        <div class="forecast-brief__item-date"><span
+                                class="forecast-brief__item-dayname">'.$day->getDayName($key).'</span><span
+                                class="forecast-brief__item-day">'.$day->getDayNumber($key).'</span></div>
+                        <div class="forecast-brief__item-description t t_c_17"><i
+                                class="icon icon_thumb_'.$day->day->getIcon().' icon_size_30" data-width="30"></i>
+
+                            <div class="forecast-brief__item-comment">'.$day->day->weather_type.'</div>
+                            <div class="forecast-brief__item-temp-day" title="Максимальная температура днём">
+                             '.$day->day->temperature_avg.'
+                             днём
                             </div>
                         </div>
-                        <div class="forecast-brief__item-temp-night t t_c_9" title="Минимальная температура ночью">+9
+                        <div class="forecast-brief__item-temp-night t t_c_9" title="Минимальная температура ночью">
+                        '.$day->night->temperature_avg.'
                             ночью
                         </div>
-                    </li>
-BLOCK;
+                    </li>';
 
-
-
-                        if(\YandexWeather\Models\Day::CheckSaturday($key))
+                        if($day->CheckSaturday($key))
                             echo '<li class="forecast-brief__item forecast-brief__item_gap">&nbsp;</li>';
+
+
+
 
                     }
 

@@ -47,6 +47,9 @@ class Detail {
      * @return mixed
      */
     public function getIcon() {
+        if(substr($this->image_v3,  -3, 1) == "-")
+            $this->image_v3 =  str_replace("-", "", $this->image_v3);
+
         return str_replace("_", "-", $this->image_v3);
     }
 

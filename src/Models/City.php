@@ -29,6 +29,14 @@ class City {
             return "not found current day";
     }
 
+    public function getListDays() {
+        $current = date("Y-m-d");
+        if(isset($this->days[$current]))
+            unset($this->days[$current]);
+
+        return $this->days;
+    }
+
     public function getYesterday() {
         $yesterday = date("Y-m-d", time() - 86400);
 

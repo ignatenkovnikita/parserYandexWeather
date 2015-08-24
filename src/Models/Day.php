@@ -31,10 +31,39 @@ class Day{
 
     public static function CheckSaturday($value)
     {
-        if (date('w', strtotime($value)) == 6)
+        if (date('w', strtotime($value)) == 0)
             return true;
         else
             return false;
+    }
+
+    public static function getDayNumber($value) {
+        $listMonths = ['','января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+        $str = date('j', strtotime($value));
+        $str .= " ".$listMonths[date("n", strtotime($value))];
+        return $str;;
+
+    }
+
+    public static function getDayName($value) {
+        $str = "";
+
+        $listDays = ['вс','пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+
+        $date = Date('d.m.Y', strtotime("+1 days"));
+        $match_date = date('d.m.Y', strtotime($value));
+
+        if($date == $match_date)
+            $str = "ЗАВТРА";
+        else {
+            $str = $listDays[date("w", strtotime($value))];
+
+            //return $this->days[date('w', $date)].', '.(int)date('d',$date).' '.$this->months[date('n', $date)];
+        }
+
+
+        return $str;
+
     }
     /*public function __construct($data) {
         foreach ($data as $key => $value) {
