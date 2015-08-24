@@ -12,11 +12,11 @@ require_once('vendor/autoload.php');
 
 use YandexWeather\ParserYandexWeather;
 
-$parser = new ParserYandexWeather();
-$parser->load();
+$parser = new ParserYandexWeather(27643);
+//$parser->load();
 $city = $parser->getResult();
 
-//var_dump($city->getCurrentDay());
+//var_dump($city);
 ?>
 
 <!DOCTYPE html>
@@ -1171,52 +1171,34 @@ $city = $parser->getResult();
 <div class="content">
     <div class="content__top clearfix">
         <div class="current-weather">
-            <div class="current-weather__today">Сейчас <span class="current-weather__local-time">22:16</span></div>
+            <div class="current-weather__today">Сейчас <span class="current-weather__local-time"><?=date("H:i")?></span></div>
             <span class="current-weather__col current-weather__col_type_now t t_c_13"><i
                     class="icon icon_size_48 icon_thumb_ovc" data-width="48"></i><span class="current-weather__comment">пасмурно</span><div
-                    class="current-weather__thermometer current-weather__thermometer_type_now">+13 °C
+                    class="current-weather__thermometer current-weather__thermometer_type_now"><?=$city->fact->temperature?> °C
                 </div></span><span class="current-weather__col current-weather__col_type_after t t_c_8"><span
                     class="current-weather__thermometer-name">ночью</span><i class="icon icon_thumb_skc-n icon_size_30"
                                                                              data-width="30"></i><div
-                    class="current-weather__thermometer current-weather__thermometer_type_after">+<?=$city->getCurrentDay()->night->temperature?>
+                    class="current-weather__thermometer current-weather__thermometer_type_after"><?=$city->getCurrentDay()->morning->temperature_avg?>
                 </div></span><span class="current-weather__col current-weather__col_type_after t t_c_11"><span
-                    class="current-weather__thermometer-name">утром</span><i class="icon icon_thumb_bkn-d icon_size_30"
+                    class="current-weather__thermometer-name">днём</span><i class="icon icon_thumb_bkn-d icon_size_30"
                                                                              data-width="30"></i><div
-                    class="current-weather__thermometer current-weather__thermometer_type_after">+123
+                    class="current-weather__thermometer current-weather__thermometer_type_after"><?=$city->getCurrentDay()->day->temperature_avg?>
                 </div></span><span class="current-weather__col current-weather__info"><div class="current-weather__info-row">
-                    <span class="current-weather__info-label">Восход: </span>04:58<span
-                        class="current-weather__info-label current-weather__info-label_type_sunset">Закат: </span>19:28
+                    <span class="current-weather__info-label">Восход: </span><?=$city->getCurrentDay()->sunrise?><span
+                        class="current-weather__info-label current-weather__info-label_type_sunset">Закат: </span><?=$city->getCurrentDay()->sunset?>
                 </div><div class="current-weather__info-row current-weather__info-row_type_wind"><span
                         class="current-weather__info-label">Ветер: </span> <span class="wind-speed"><?=$city->fact->wind_speed?> м/с</span> <!--<abbr
                         class=" icon-abbr" title="Ветер: северо-восточный">СВ</abbr><i
-                        class="icon icon_size_12 icon_wind_ne icon_wind" data-width="12"></i>--></div><div
+                        class="icon icon_size_12 icon_wind_ne icon_wind" data-width="12"></i>--><?=$city->fact->getWindDirection()?></div><div
                     class="current-weather__info-row"><span class="current-weather__info-label">Влажность: </span><?=$city->fact->humidity?>%
                 </div><div class="current-weather__info-row"><span class="current-weather__info-label">Давление: </span><?=$city->fact->pressure?> мм
                     рт. ст.
                 </div><div class="current-weather__info-row current-weather__info-row_type_time">Данные на <?=$city->fact->getObservationTime()?></div></span>
 
-            <div class="current-weather__yesterday">Вчера в это время: +<?=$city->yesterday->temperature?></div>
+            <div class="current-weather__yesterday">Вчера в это время: <?=$city->yesterday->temperature?></div>
         </div>
     </div>
     <div class="forecasts">
-        <div class="tabs tabs_control_buttons tabs_size_s tabs_links_yes tabs-panes i-bem"
-             data-bem="{&quot;tabs&quot;:{},&quot;tabs-panes&quot;:{&quot;id&quot;:&quot;forecasts&quot;}}"><span
-                class="radio-button radio-button_size_s radio-button_links_yes radio-button_theme_normal tabs__control i-bem radio-button_js_inited"
-                role="tablist" data-bem="{&quot;radio-button&quot;:{&quot;live&quot;:false}}"><label
-                    class="radio-button__radio radio-button__radio_current_yes radio-button__radio_link_yes radio-button__radio_checked_yes radio-button__radio_pressed_yes radio-button__radio_side_left tabs__radio"
-                    for="uniq14402443185292342778" role="tab" id="forecasts-tab-0" aria-selected="false"><input
-                        class="radio-button__control" value="briefly" checked="checked" id="uniq14402443185292342778"
-                        type="radio" name="tabs-menu-buttons-1058102"><span class="radio-button__text"><a class="link"
-                                                                                                          href="https://pogoda.yandex.ru/vyksa"
-                                                                                                          tabindex="-1"><span
-                                class="radio-button__text">кратко</span></a></span></label><label
-                    class="radio-button__radio radio-button__radio_link_yes radio-button__radio_side_right radio-button__radio_next-for-pressed_yes tabs__radio"
-                    for="uniq14402443185292342779" role="tab" id="forecasts-tab-1" aria-selected="false"><input
-                        class="radio-button__control" value="details" id="uniq14402443185292342779" type="radio"
-                        name="tabs-menu-buttons-1058102"><span class="radio-button__text"><a class="link"
-                                                                                             href="https://pogoda.yandex.ru/vyksa/details"
-                                                                                             tabindex="-1"><span
-                                class="radio-button__text">подробно</span></a></span></label></span></div>
         <div class="tabs-panes i-bem" data-bem="{&quot;tabs-panes&quot;:{&quot;id&quot;:&quot;forecasts&quot;}}">
             <div class="tabs-panes__pane tabs-panes__pane_active_yes" role="tabpanel" aria-labelledby="forecasts-tab-0"
                  aria-expanded="true">

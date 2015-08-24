@@ -19,10 +19,13 @@ class Mapping {
         );
     }
 
-    public static function mapFact() {
+    public static function mapDetail() {
         return array(
             "temperature_from" => "temperature_from",
             "temperature_to" => "temperature_to",
+            "inner" => [
+                "temperature-data" => "temperature_avg",
+            ],
             "station" => "station",
             "observation_time" => "observation_time",
             "uptime" => "uptime",

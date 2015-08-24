@@ -13,7 +13,7 @@ namespace YandexWeather;
 
 use YandexWeather\Models\City;
 use YandexWeather\Models\Day;
-use YandexWeather\Models\Fact;
+use YandexWeather\Models\Detail;
 
 class ParseFromXml {
 
@@ -57,19 +57,19 @@ class ParseFromXml {
                 $city->{Mapping::mapCity()[$key]} = (string) $value;
         }
 
-        $fact = new Fact();
+        $fact = new Detail();
         foreach ($this->xml->fact[0] as $key => $value) {
-            if(isset(Mapping::mapFact()[$key])) {
-                $fact->{Mapping::mapFact()[$key]} = (string) $value;
+            if(isset(Mapping::mapDetail()[$key])) {
+                $fact->{Mapping::mapDetail()[$key]} = (string) $value;
             }
 
         }
         $city->fact = $fact;
 
-        $fact = new Fact();
+        $fact = new Detail();
         foreach ($this->xml->yesterday[0] as $key => $value) {
-            if(isset(Mapping::mapFact()[$key])) {
-                $fact->{Mapping::mapFact()[$key]} = (string) $value;
+            if(isset(Mapping::mapDetail()[$key])) {
+                $fact->{Mapping::mapDetail()[$key]} = (string) $value;
             }
 
         }
@@ -87,12 +87,20 @@ class ParseFromXml {
 
             }
             foreach ($value->day_part as $key2 => $value2) {
-                $detail = new Fact();
+                $detail = new Detail();
                 foreach ($value2 as $key3 => $value3) {
-                    if(isset(Mapping::mapFact()[$key3])) {
-
-                        $detail->{Mapping::mapFact()[$key3]} = (string) $value3;
+                    if(isset(Mapping::mapDetail()[$key3])) {
+                        $detail->{Mapping::mapDetail()[$key3]} = (string) $value3;
                     }
+                    //echo $key3."<br>";
+                    if(isset(Mapping::mapDetail()["inner"][$key3])) {
+
+                        //echo Mapping::mapFact()["inner"][$key3]."<br>";
+
+                        $detail->{Mapping::mapDetail()["inner"][$key3]} = (string) $value3->avg;
+                    }
+
+                    //var_dump((string) $value3->avg);
                 }
                 //echo $value2->attributes()["type"];
                 //var_dump($detail);
@@ -103,74 +111,6 @@ class ParseFromXml {
             $days[(string)$value->attributes()["date"]] = $day;
         }
         $city->days = $days;
-
-
-        /*$map = Mapping::map();
-        $structure = $map[$this->xml->getName()];
-        $class = $this->nameSp.$structure["name"];
-
-        $city = new $class();
-        if($this->xml->attributes()) {
-            foreach ($this->xml->attributes() as $key => $value) {
-                if(isset($structure["attributes"][$key]))
-                    $city->$structure["attributes"][$key] = (string) $value;
-            }
-        }
-
-
-        foreach ($this->xml->children() as $value) {
-
-            //echo $value->getName();
-            $class = array_search('name', Mapping::map());
-            $map = Mapping::map();
-            //var_dump($this->getValues($map, "fact"));
-            //var_dump($map);
-            //var_dump(array_key_exists('forecast', $map));
-            if(isset($map[$value->getName()]["name"])) {
-                if(class_exists("YandexWeather\\Models\\".$map[$value->getName()]["name"])) {
-                    echo 123;
-                }
-            }
-
-            //var_dump();
-
-            if($value->attributes())
-
-                foreach($value->attributes() as $key => $value) {
-                    //echo $key;
-                }
-
-        }*/
-
-        //var_dump($city);
-
-        /*$city = new City();
-        foreach($this->xml->attributes() as $key => $value) {
-            if(isset(Mapping::mapCity()[$key]))
-                $city->{Mapping::mapCity()[$key]} = (string) $value;
-        }*/
-
-        //var_dump($this->xml->fact);
-        //$city->fact = new Fact();
-
-        /*foreach ($this->xml->children() as $child) {
-            echo $child->getName();
-            if(class_exists("YandexWeather\\Models\\".$child->getName())) {
-                echo 123;
-            }
-            //var_dump();
-
-
-        }*/
-
-        /*foreach ($this->xml->fact[0] as $key => $value) {
-            //echo $key;
-            if(isset(Mapping::mapFact()[$key]))
-                $city->fact->{Mapping::mapFact()[$key]} = (string) $value;
-            //$city->fact->{$key} =  (string) $value;
-
-        }*/
-
 
         return $city;
     }

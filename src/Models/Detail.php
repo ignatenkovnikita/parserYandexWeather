@@ -9,10 +9,11 @@
 namespace YandexWeather\Models;
 
 
-class Fact {
+class Detail {
 
     public $temperature_from;
     public $temperature_to;
+    public $temperature_avg;
 
     public $station;
     public $observation_time;
@@ -35,6 +36,22 @@ class Fact {
 
     public function getObservationTime() {
         return $time = date("H:i",strtotime($this->observation_time));
+    }
+
+    public function getWindDirection() {
+        $windDirection =  [
+            's'=>'&#8593; ю',
+            'n'=>'&#8595; с',
+            'w'=>'&#8594; з',
+            'e'=>'&#8592; в',
+            'sw'=>'&#8599; юз',
+            'se'=>'&#8598; юв',
+            'nw'=>'&#8600; сз',
+            'ne'=>'&#8601; св'];
+
+        if(isset($windDirection[$this->wind_direction]))
+            return $windDirection[$this->wind_direction];
+
     }
 
 
