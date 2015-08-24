@@ -29,9 +29,12 @@ class Day{
     public $night_short;
 
 
-    public static function CheckSaturday($value)
+    public static function CheckWeekend($value, $weekend = false)
     {
-        if (date('w', strtotime($value)) == 0)
+        $dayNumber = date('w', strtotime($value));
+        if($weekend && ($dayNumber == 0 || $dayNumber == 6))
+            return true;
+        elseif ($weekend == false && $dayNumber == 0)
             return true;
         else
             return false;

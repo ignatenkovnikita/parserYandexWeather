@@ -86,78 +86,6 @@ $city = $parser->getResult();
           href="https://pogoda.yandex.ru/opensearch.ru.xml">
     <link rel="canonical" href="https://pogoda.yandex.ru/vyksa">
     <style type="text/css"></style>
-    <style type="text/css">.tableau {
-            position: absolute;
-            z-index: -1;
-            visibility: hidden;
-            overflow: visible;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            margin-top: -20px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            opacity: 0;
-            border: 1px solid #ccc;
-            border-color: rgba(0, 0, 0, .06);
-            -webkit-transition: margin .15s ease-out 0s, opacity .15s ease-out 0s, visibility 0s ease-out .15s;
-            transition: margin .15s ease-out 0s, opacity .15s ease-out 0s, visibility 0s ease-out .15s;
-            -webkit-overflow-scrolling: touch
-        }
-
-        .tableau_opened {
-            visibility: visible;
-            margin-top: 0;
-            opacity: 1;
-            -webkit-transition-delay: 0s;
-            transition-delay: 0s
-        }
-
-        .tableau__content {
-            display: block;
-            width: 100%;
-            height: 100%;
-            background: #fff;
-            -webkit-box-shadow: 0 30px 70px -10px rgba(0, 0, 0, .4);
-            box-shadow: 0 30px 70px -10px rgba(0, 0, 0, .4)
-        }
-
-        .tableau_closed .tableau__content {
-            display: none
-        }
-
-        .tableau__tail, .tableau__tail:after {
-            position: absolute;
-            display: block;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-color: transparent;
-            border-color: rgba(255, 255, 255, 0)
-        }
-
-        .tableau__tail {
-            top: -15px;
-            left: 32px;
-            border-width: 0 14px 14px 14px;
-            border-bottom-color: #ccc;
-            border-bottom-color: rgba(0, 0, 0, .06)
-        }
-
-        .tableau__tail:after {
-            top: 1.4px;
-            left: -15px;
-            content: '';
-            border-width: 0 15px 15px 15px;
-            border-bottom-color: #fff
-        }
-
-        .tableau_opened .tableau__tail:after {
-            content: ' '
-        }</style>
-
 
 </head>
 <body class="b-page b-page_type_index inquire geo-stat b-page__body i-ua i-ua_interaction_yes i-global i-bem b-page_js_inited inquire_js_inited i-ua_platform_other i-ua_js_inited i-global_js_inited"
@@ -206,7 +134,7 @@ $city = $parser->getResult();
 
 
                         echo '<li class="forecast-brief__item">
-                        <div class="forecast-brief__item-date"><span
+                        <div class="forecast-brief__item-date '.($day->checkWeekend($key, true) ? "forecast-brief__item-date_weekend_yes" : "").'"><span
                                 class="forecast-brief__item-dayname">'.$day->getDayName($key).'</span><span
                                 class="forecast-brief__item-day">'.$day->getDayNumber($key).' '.($i>0? "" : $day->getMonthName($key)).'</span></div>
                         <div class="forecast-brief__item-description t t_c_17"><i
@@ -224,7 +152,7 @@ $city = $parser->getResult();
                         </div>
                     </li>';
 
-                        if($day->CheckSaturday($key))
+                        if($day->checkWeekend($key))
                             echo '<li class="forecast-brief__item forecast-brief__item_gap">&nbsp;</li>';
 
                         $i++;
