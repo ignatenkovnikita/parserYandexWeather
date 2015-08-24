@@ -38,11 +38,12 @@ class Day{
     }
 
     public static function getDayNumber($value) {
-        $listMonths = ['','января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
-        $str = date('j', strtotime($value));
-        $str .= " ".$listMonths[date("n", strtotime($value))];
-        return $str;;
+        return $str = date('j', strtotime($value));
+    }
 
+    public static function getMonthName($value) {
+        $listMonths = ['','января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+        return $listMonths[date("n", strtotime($value))];
     }
 
     public static function getDayName($value) {
