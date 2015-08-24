@@ -8,4 +8,4 @@ git clone https://github.com/ignatenkovnikita/parserYandexWeather.git
 cd parserYandexWeather
 composer update
 ```
-After this, run **index.php** from you web browser.
+After this, run **index.php** from your web browser.
