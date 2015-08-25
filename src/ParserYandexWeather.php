@@ -57,13 +57,20 @@ class ParserYandexWeather {
     }
 
 
+    /**
+     * Return parse document
+     * @return string|Models\City
+     */
     public function getResult() {
 
         $parse = new ParseFromXml($this->getFileName());
 
         //$city = new City($this->getFileName());
 
-        return $parse->parse();
+        if($parse->parse())
+            return $parse->parse();
+        else
+            return "Error parse document";
 
     }
 
@@ -79,7 +86,7 @@ class ParserYandexWeather {
      * Get FileName for save
      * @return string
      */
-    private function getFileName() {
+    public function getFileName() {
         return "city_" . $this->_citiyId . ".xml";
     }
 
