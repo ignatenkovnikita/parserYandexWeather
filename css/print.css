@@ -1,0 +1,478 @@
+.header2__websearch,
+.header2__nav,
+.navigation-city__info,
+.adv,
+.rotator,
+.forecasts .tabs,
+.info,
+.footer,
+.header2__left .input,
+.header2__left .button,
+.debug,
+.table__body-cell_type_wind-strength,
+.arrow2_theme_nameplate:before,
+.maps-monitor__play,
+.icon_action_prev,
+.icon_action_next,
+.maps-monitor__button_play,
+.maps-monitor__progress
+{
+    display: none;
+}
+
+.header2__middle
+{
+    vertical-align: bottom;
+}
+
+.arrow2_theme_nameplate-border,
+.current-weather__col_type_now .icon,
+.alert,
+.alert a
+{
+    background: transparent;
+}
+
+.current-weather__col_type_now .icon
+{
+    top: 10px;
+}
+
+.header2__main,
+.header2__logo .link
+{
+    height: 64px;
+    min-height: 64px;
+
+    border: 0;
+}
+
+.weather-table__wind
+{
+    top: 0;
+    left: 0;
+
+    float: left;
+}
+
+.weather-table__body-cell_type_wind
+{
+    text-align: left;
+    white-space: nowrap;
+}
+
+.weather-table__body-cell_type_wind .weather-table__value
+{
+    padding-left: 10px;
+}
+
+.weather-table__body-cell_type_wind abbr
+{
+    top: 0;
+    left: 0;
+
+    display: inline-block;
+
+    width: auto;
+    margin: 0;
+    padding: 0 2px;
+}
+
+.weather-table__body-cell_type_wind .icon,
+.weather-table__wind
+{
+    top: 0;
+    left: 0;
+
+    display: inline-block;
+    float: none;
+
+    margin: 0;
+}
+
+.weather-table__body-cell_type_wind .icon
+{
+    margin: 0 5px;
+}
+
+.forecast-detailed__sunrise,
+.forecast-detailed__sunset
+{
+    width: 7%;
+    margin-top: 0;
+}
+
+.forecast-detailed__sunrise
+{
+    margin-top: 20px;
+}
+
+.header2__logo .image
+{
+    top: 30px;
+    left: 30px;
+}
+
+.forecast-brief__item-dayname,
+.forecast-brief__item-day,
+.forecast-brief__item-description,
+.forecast-brief__item-temp-night
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.arrow2_theme_nameplate
+{
+    position: relative;
+    z-index: 2;
+    top: 30px;
+
+    height: 1.66em;
+
+    line-height: 1.66em;
+
+    border: 2px solid #ffca00;
+    border-right-color: #fff;
+}
+
+.forecast-brief__item-temp-night
+{
+    color: #000;
+}
+
+.current-weather__info-label,
+.current-weather__info-row_type_time
+{
+    color: #333;
+}
+
+.arrow2_theme_nameplate:after
+{
+    position: absolute;
+    z-index: 0;
+    top: -2px;
+    right: -13px;
+
+    height: 1.76em;
+
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAgCAYAAADJ2fKUAAABLElEQVQ4y5WVLSzFYRSHH9dQruSjGZOMqWYmC4JKskmaptpUxaYKgmaCIJvZ3fA/rz9mt2BTkXwE11x+ygmm3Pe82xufPb/zfpyDDP3ZpUSFVusfJBkL5C4ZizKkxIPu6MqDREWJKwdXIrY5j/isGt0RsCZDKljLhxLTbnvXNf0R26GDmxHbuIxvGZ8yhiO2XT/JnXzolCEZDRlNFYxFbFte20E+VNIn482vYCpyKOsOneRDdaoqePKYs5HaVh1KEm1R6EZ7tLcGzumR8RKKJ2PDgaM8oGBAxoeMHxkTudB26HJ1xqiMpowvJUZya9kPPVhdMOmxGioZzLUchz6hEjMOvCrRG2tjuY1FBfNueVSdak6sDiVuQ81SxrJb7lWnMzYACpaiU+MyZ9T8AhbILSd3sS8lAAAAAElFTkSuQmCC');
+
+    line-height: 1.76em;
+}
+
+.content
+{
+    clear: both;
+}
+
+.alert,
+.alert a
+{
+    z-index: 0;
+
+    font-weight: 700;
+
+    color: #f30 !important;
+}
+
+.alert a
+{
+    margin: 40px 0 20px;
+
+    border: 1px solid red;
+}
+
+.navigation-city
+{
+    margin-top: 5px;
+}
+
+.icon:before
+{
+    display: block;
+
+    width: 30px;
+    height: 30px;
+
+    content: '';
+
+    -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+}
+
+.icon_thumb_bkn-p-ra-d:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-plus-ra-d.svg);
+}
+
+.icon_thumb_bkn-p-ra-d:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-plus-ra-d.svg);
+}
+
+.icon_thumb_bkn-p-ra-n:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-plus-ra-n.svg);
+}
+
+.icon_thumb_bkn-p-sn-d:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-plus-sn-d.svg);
+}
+
+.icon_thumb_bkn-p-sn-n:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-plus-sn-n.svg);
+}
+
+.icon_thumb_bkn-m-ra-d:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-minus-ra-d.svg);
+}
+
+.icon_thumb_bkn-m-ra-n:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-minus-ra-n.svg);
+}
+
+.icon_thumb_bkn-m-sn-d:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-minus-sn-d.svg);
+}
+
+.icon_thumb_bkn-m-sn-n:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-minus-sn-n.svg);
+}
+
+.icon_thumb_bkn-d:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-d.svg);
+}
+
+.icon_thumb_bkn-n:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-n.svg);
+}
+
+.icon_thumb_bkn-ra-d:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-ra-d.svg);
+}
+
+.icon_thumb_bkn-ra-n:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-ra-n.svg);
+}
+
+.icon_thumb_bkn-sn-d:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-sn-d.svg);
+}
+
+.icon_thumb_bkn-sn-n:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bkn-sn-n.svg);
+}
+
+.icon_thumb_bl:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/bl.svg);
+}
+
+.icon_thumb_fg-d:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/fg-d.svg);
+}
+
+.icon_thumb_fg-n:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/fg-n.svg);
+}
+
+.icon_thumb_ovc:before
+{
+    content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNDggNDgiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjMDA2RUQ0IiBkPSJNMzkuNzg1LDM3LjA4NWMtMC4wMzksMC0wLjA3NS0wLjAwOC0wLjExNC0wLjAwOGwwLjAwNiwwLjAxMiBINS44NTRsMC4wMDctMC4wMDZjLTAuMDI2LDAtMC4wNTEsMC4wMDQtMC4wNzYsMC4wMDRDMi41OSwzNy4wODcsMCwzNC40OTcsMCwzMS4zMDJjMC0yLjk5MiwyLjI3Mi01LjQ1NSw1LjE4Ni01Ljc1NCBjMC43NDEtMy44MTYsNC4wOTctNi42OTcsOC4xMjktNi42OTdjMC4yNDQsMCwwLjQ4NSwwLjAxNiwwLjcyNSwwLjAzNmMxLjcwMy00LjgwNCw2LjI3NS04LjI1MSwxMS42NjMtOC4yNTEgYzYuMDcsMCwxMS4xMSw0LjM2OSwxMi4xNzEsMTAuMTMxYzAuNjE1LTAuMTQ2LDEuMjUzLTAuMjMsMS45MTItMC4yM2M0LjU2OSwwLDguMjc0LDMuNzA1LDguMjc0LDguMjczIEM0OC4wNiwzMy4zOCw0NC4zNTQsMzcuMDg1LDM5Ljc4NSwzNy4wODV6IE0zOS43NjMsMjMuNDQ3Yy0yLjU2NSwwLTQuNzA1LDEuODE4LTUuMjA2LDQuMjM0bC0wLjU2Ni0wLjI2MiBjMC43MS0xLjMyNCwxLjExNC0yLjgzOCwxLjExNC00LjQ0N2MwLTUuMjE0LTQuMjI2LTkuNDQtOS40MzktOS40NGMtNS4wODgsMC05LjIyNCw0LjAyOC05LjQyMSw5LjA2NyBjLTAuODU0LTAuNTYzLTEuODY4LTAuOTA0LTIuOTY5LTAuOTA0Yy0zLjAwOCwwLTUuNDQ1LDIuNDM4LTUuNDQ1LDUuNDQ1YzAsMS4wOTIsMC4zMjksMi4xMDUsMC44ODIsMi45NTdsLTAuMzU0LDAuMTc4IGMtMC40MDUtMS4wMzUtMS40MDYtMS43NjgtMi41ODQtMS43NjhjLTEuNTM2LDAtMi43ODIsMS4yNDQtMi43ODIsMi43ODFjMCwxLjUzNSwxLjI0NiwyLjc4MSwyLjc4MiwyLjc4MSBjMC4xNDMsMCwwLjI3OS0wLjAyMSwwLjQxNi0wLjA0MWgzMy4wMTNjMC4xODgsMC4wMiwwLjM2OSwwLjA1NywwLjU2MSwwLjA1N2MyLjkzOCwwLDUuMzE5LTIuMzgzLDUuMzE5LTUuMzIgUzQyLjcsMjMuNDQ3LDM5Ljc2MywyMy40NDd6Ii8+PC9zdmc+Cg==');
+}
+
+.icon_thumb_ovc-p--a:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/ovc-plus-ra.svg);
+}
+
+.icon_thumb_ovc-p--n:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/ovc-plus-sn.svg);
+}
+
+.icon_thumb_ovc-m-ra:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/ovc-minus-ra.svg);
+}
+
+.icon_thumb_ovc-m-sn:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/ovc-minus-sn.svg);
+}
+
+.icon_thumb_ovc-gr:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/ovc-gr.svg);
+}
+
+.icon_thumb_ovc-ra:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/ovc-ra.svg);
+}
+
+.icon_thumb_ovc-sn:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/ovc-sn.svg);
+}
+
+.icon_thumb_ovc-ts-ra:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/ovc-ts-ra.svg);
+}
+
+.icon_thumb_strm:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/strm.svg);
+}
+
+.icon_thumb_skc-d:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/skc-d.svg);
+}
+
+.icon_thumb_skc-n:before
+{
+    content: url(//yastatic.net/weather/i/icons/svg/skc-n.svg);
+}
+
+.icon_thumb_water
+{
+    background: transparent;
+}
+
+.icon_thumb_water:before
+{
+    width: 20px;
+    height: 20px;
+
+    content: url(//yastatic.net/weather/i/icons/svg/water.svg);
+
+    line-height: 20px;
+}
+
+.current-weather__water .icon_thumb_water
+{
+    top: -5px;
+}
+
+.current-weather__water
+{
+    vertical-align: top;
+}
+
+.icon_wind_e:before,
+.icon_wind_ene:before,
+.icon_wind_ese:before,
+.icon_wind_n:before,
+.icon_wind_ne:before,
+.icon_wind_nne:before,
+.icon_wind_nnw:before,
+.icon_wind_nw:before,
+.icon_wind_s:before,
+.icon_wind_se:before,
+.icon_wind_sse:before,
+.icon_wind_ssw:before,
+.icon_wind_sw:before,
+.icon_wind_w:before,
+.icon_wind_wnw:before,
+.icon_wind_wsw:before
+{
+    width: 11px;
+    height: 11px;
+
+    content: url('data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMSAxMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaWQiIHZpZXdCb3g9IjAgMCAxMSAxMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNS41IDFMOSAxMCA1LjUgNy43OTYgMiAxMHoiIGZpbGw9IiM2RTcxN0EiLz48L3N2Zz4=');
+}
+
+.forecast-detailed__geomagnetic-field
+{
+    margin-top: 0;
+}
+
+.forecast-detailed__moon
+{
+    width: 10%;
+    margin-top: 0;
+    padding: 0 0 0 20px;
+
+    text-align: left;
+}
+
+.forecast-detailed__moon .icon
+{
+    overflow: visible;
+
+    height: 70px;
+
+    background-position: 50% 100%;
+}
+
+.icon_moon_0:before,
+.icon_moon_1:before,
+.icon_moon_2:before,
+.icon_moon_3:before,
+.icon_moon_4:before,
+.icon_moon_5:before,
+.icon_moon_6:before,
+.icon_moon_7:before,
+.icon_moon_8:before,
+.icon_moon_9:before,
+.icon_moon_10:before,
+.icon_moon_11:before,
+.icon_moon_12:before,
+.icon_moon_13:before,
+.icon_moon_14:before,
+.icon_moon_15:before,
+.icon_moon_16:before
+{
+    position: relative;
+    z-index: 1;
+
+    display: block !important;
+    visibility: visible !important;
+    overflow: visible;
+
+    width: 26px;
+    height: 26px;
+
+    content: attr(title);
+    white-space: normal;
+    text-indent: 0;
+
+    font-style: normal;
+}
+
+.menu_theme_maps .menu__item_state_current .link_pseudo_yes .link__inner
+{
+    border-bottom: 1px dotted #000;
+}
+
+.i-ua_js_yes .link_pseudo_yes .link__inner
+{
+    border-bottom-color: transparent;
+}
+
+.forecast-brief__item-temp-night
+{
+    text-indent: 0;
+}
+
+.forecast-brief__item-description:before
+{
+    margin-left: 0;
+}

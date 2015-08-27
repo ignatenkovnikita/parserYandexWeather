@@ -27,7 +27,7 @@ $city = $parser->getResult();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Прогноз погоды в Выксе на 10 дней — Яндекс.Погода</title>
-    <script>;
+    <!--<script>;
         (function (d, e, c, r) {
             e = d.documentElement;
             c = "className";
@@ -52,19 +52,19 @@ $city = $parser->getResult();
             e = d.documentElement;
             p = "placeholder";
             e.className += " i-ua_" + p + (p in d.createElement("input") ? "_yes" : "_no")
-        })(document);</script>
+        })(document);</script>-->
     <!--[if gt IE 9]><!-->
-    <link rel="stylesheet" href="https://yastatic.net/weather-frontend/3.10.1/desktop.bundles/index/_index.css">
+    <link rel="stylesheet" href="./css/_index.css">
     <!--<![endif]--><!--[if IE 6]>
-    <link rel="stylesheet" href="//yastatic.net/weather-frontend/3.10.1/desktop.bundles/index/_index.ie6.css"/>
+    <link rel="stylesheet" href="./css/_index.ie6.css"/>
     <![endif]--><!--[if IE 7]>
-    <link rel="stylesheet" href="//yastatic.net/weather-frontend/3.10.1/desktop.bundles/index/_index.ie7.css"/>
+    <link rel="stylesheet" href="./css/_index.ie7.css"/>
     <![endif]--><!--[if IE 8]>
-    <link rel="stylesheet" href="//yastatic.net/weather-frontend/3.10.1/desktop.bundles/index/_index.ie8.css"/>
+    <link rel="stylesheet" href="./css/_index.ie8.css"/>
     <![endif]--><!--[if IE 9]>
-    <link rel="stylesheet" href="//yastatic.net/weather-frontend/3.10.1/desktop.bundles/index/_index.ie9.css"/>
+    <link rel="stylesheet" href="./css/_index.ie9.css"/>
     <![endif]-->
-    <link rel="stylesheet" href="https://yastatic.net/weather-frontend/3.10.1/i/print/print.css" media="print">
+    <link rel="stylesheet" href="./css/print.css" media="print">
     <meta name="viewport" content="width=1000">
     <meta name="description"
           content="Подробный прогноз погоды для Выксы на сегодня, завтра, неделю, 10 дней. Температура воздуха и воды, осадки, давление и влажность, скорость ветра. Погодные карты, информер для сайта и информация о климате регионов. ">
