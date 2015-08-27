@@ -88,37 +88,50 @@ $city = $parser->getResult();
     <style type="text/css"></style>
 
 </head>
-<body class="b-page b-page_type_index inquire geo-stat b-page__body i-ua i-ua_interaction_yes i-global i-bem b-page_js_inited inquire_js_inited i-ua_platform_other i-ua_js_inited i-global_js_inited"
-      data-bem="{&quot;b-page&quot;:{},&quot;inquire&quot;:{&quot;inquire&quot;:{&quot;top&quot;:&quot;.content__top a&quot;,&quot;btm&quot;:&quot;.info__ratatuy a&quot;},&quot;level&quot;:2,&quot;maxLevel&quot;:3},&quot;geo-stat&quot;:{},&quot;i-ua&quot;:{},&quot;i-global&quot;:{&quot;lang&quot;:&quot;ru&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;content-region&quot;:&quot;ru&quot;,&quot;click-host&quot;:&quot;//clck.yandex.ru&quot;,&quot;passport-host&quot;:&quot;https://passport.yandex.ru&quot;,&quot;pass-host&quot;:&quot;https://pass.yandex.ru&quot;,&quot;social-host&quot;:&quot;https://social.yandex.ru&quot;,&quot;export-host&quot;:&quot;https://export.yandex.ru&quot;,&quot;login&quot;:&quot;MustangXP&quot;,&quot;lego-static-host&quot;:&quot;//yastatic.net/lego/2.10-142&quot;,&quot;id&quot;:&quot;weather&quot;,&quot;host&quot;:&quot;https://pogoda.yandex.ru&quot;,&quot;user-region&quot;:&quot;ru&quot;,&quot;secret-key&quot;:&quot;yafd339789e7f51da41042bbfe20da711&quot;,&quot;retpath&quot;:&quot;https://pogoda.yandex.ru/vyksa/&quot;,&quot;social-retpath&quot;:&quot;https://pogoda.yandex.ru/social-broker__closer.html&quot;,&quot;uid&quot;:&quot;16370760&quot;,&quot;yu&quot;:&quot;1168825731435355130&quot;,&quot;rid&quot;:20040,&quot;urid&quot;:47,&quot;slug&quot;:&quot;vyksa&quot;,&quot;metrikaId&quot;:115080}}"
-      data-interaction="pointer">
+<body
+    class="b-page b-page_type_index inquire geo-stat b-page__body i-ua i-ua_interaction_yes i-global i-bem b-page_js_inited inquire_js_inited i-ua_platform_other i-ua_js_inited i-global_js_inited"
+    data-bem="{&quot;b-page&quot;:{},&quot;inquire&quot;:{&quot;inquire&quot;:{&quot;top&quot;:&quot;.content__top a&quot;,&quot;btm&quot;:&quot;.info__ratatuy a&quot;},&quot;level&quot;:2,&quot;maxLevel&quot;:3},&quot;geo-stat&quot;:{},&quot;i-ua&quot;:{},&quot;i-global&quot;:{&quot;lang&quot;:&quot;ru&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;content-region&quot;:&quot;ru&quot;,&quot;click-host&quot;:&quot;//clck.yandex.ru&quot;,&quot;passport-host&quot;:&quot;https://passport.yandex.ru&quot;,&quot;pass-host&quot;:&quot;https://pass.yandex.ru&quot;,&quot;social-host&quot;:&quot;https://social.yandex.ru&quot;,&quot;export-host&quot;:&quot;https://export.yandex.ru&quot;,&quot;login&quot;:&quot;MustangXP&quot;,&quot;lego-static-host&quot;:&quot;//yastatic.net/lego/2.10-142&quot;,&quot;id&quot;:&quot;weather&quot;,&quot;host&quot;:&quot;https://pogoda.yandex.ru&quot;,&quot;user-region&quot;:&quot;ru&quot;,&quot;secret-key&quot;:&quot;yafd339789e7f51da41042bbfe20da711&quot;,&quot;retpath&quot;:&quot;https://pogoda.yandex.ru/vyksa/&quot;,&quot;social-retpath&quot;:&quot;https://pogoda.yandex.ru/social-broker__closer.html&quot;,&quot;uid&quot;:&quot;16370760&quot;,&quot;yu&quot;:&quot;1168825731435355130&quot;,&quot;rid&quot;:20040,&quot;urid&quot;:47,&quot;slug&quot;:&quot;vyksa&quot;,&quot;metrikaId&quot;:115080}}"
+    data-interaction="pointer">
 <div class="content">
     <div class="content__top clearfix">
+        <div class="navigation-city"><h1 class="title title_level_1"><?=$city->city?>. Погода</h1></div>
         <div class="current-weather">
-            <div class="current-weather__today">Сейчас <span class="current-weather__local-time"><?=date("H:i")?></span></div>
+            <div class="current-weather__today">Сейчас <span
+                    class="current-weather__local-time"><?= date("H:i") ?></span></div>
             <span class="current-weather__col current-weather__col_type_now t t_c_13"><i
-                    class="icon icon_size_48 icon_thumb_<?=$city->fact->getIcon()?>" data-width="48"></i><span class="current-weather__comment">пасмурно</span><div
-                    class="current-weather__thermometer current-weather__thermometer_type_now"><?=$city->fact->temperature?> °C
+                    class="icon icon_size_48 icon_thumb_<?= $city->fact->getIcon() ?>" data-width="48"></i><span
+                    class="current-weather__comment">пасмурно</span><div
+                    class="current-weather__thermometer current-weather__thermometer_type_now"><?= $city->fact->temperature ?>
+                     °C
                 </div></span><span class="current-weather__col current-weather__col_type_after t t_c_8"><span
-                    class="current-weather__thermometer-name">ночью</span><i class="icon icon_thumb_<?=$city->getCurrentDay()->night->getIcon()?> icon_size_30"
-                                                                             data-width="30"></i><div
-                    class="current-weather__thermometer current-weather__thermometer_type_after"><?=$city->getCurrentDay()->night->temperature_avg?>
+                    class="current-weather__thermometer-name">ночью</span><i
+                    class="icon icon_thumb_<?= $city->getCurrentDay()->night->getIcon() ?> icon_size_30"
+                    data-width="30"></i><div
+                    class="current-weather__thermometer current-weather__thermometer_type_after"><?= $city->getCurrentDay()->night->temperature_avg ?>
                 </div></span><span class="current-weather__col current-weather__col_type_after t t_c_11"><span
-                    class="current-weather__thermometer-name">днём</span><i class="icon icon_thumb_<?=$city->getCurrentDay()->day->getIcon()?> icon_size_30"
-                                                                             data-width="30"></i><div
-                    class="current-weather__thermometer current-weather__thermometer_type_after"><?=$city->getCurrentDay()->day->temperature_avg?>
-                </div></span><span class="current-weather__col current-weather__info"><div class="current-weather__info-row">
-                    <span class="current-weather__info-label">Восход: </span><?=$city->getCurrentDay()->sunrise?><span
-                        class="current-weather__info-label current-weather__info-label_type_sunset">Закат: </span><?=$city->getCurrentDay()->sunset?>
+                    class="current-weather__thermometer-name">днём</span><i
+                    class="icon icon_thumb_<?= $city->getCurrentDay()->day->getIcon() ?> icon_size_30"
+                    data-width="30"></i><div
+                    class="current-weather__thermometer current-weather__thermometer_type_after"><?= $city->getCurrentDay()->day->temperature_avg ?>
+                </div></span><span class="current-weather__col current-weather__info"><div
+                    class="current-weather__info-row">
+                    <span class="current-weather__info-label">Восход: </span><?= $city->getCurrentDay()->sunrise ?><span
+                        class="current-weather__info-label current-weather__info-label_type_sunset">Закат: </span><?= $city->getCurrentDay()->sunset ?>
                 </div><div class="current-weather__info-row current-weather__info-row_type_wind"><span
-                        class="current-weather__info-label">Ветер: </span> <span class="wind-speed"><?=$city->fact->wind_speed?> м/с</span> <abbr
-                        class=" icon-abbr" title="Ветер: северо-восточный"><?=$city->fact->getWindDirection()?></abbr><i
-                        class="icon icon_size_12 icon_wind_<?=$city->fact->wind_direction?> icon_wind" data-width="12"></i></div><div
-                    class="current-weather__info-row"><span class="current-weather__info-label">Влажность: </span><?=$city->fact->humidity?>%
-                </div><div class="current-weather__info-row"><span class="current-weather__info-label">Давление: </span><?=$city->fact->pressure?> мм
+                        class="current-weather__info-label">Ветер: </span> <span
+                        class="wind-speed"><?= $city->fact->wind_speed ?> м/с</span> <abbr
+                        class=" icon-abbr" title="Ветер: северо-восточный"><?= $city->fact->getWindDirection() ?></abbr><i
+                        class="icon icon_size_12 icon_wind_<?= $city->fact->wind_direction ?> icon_wind"
+                        data-width="12"></i></div><div
+                    class="current-weather__info-row"><span
+                        class="current-weather__info-label">Влажность: </span><?= $city->fact->humidity ?>%
+                </div><div class="current-weather__info-row"><span
+                        class="current-weather__info-label">Давление: </span><?= $city->fact->pressure ?> мм
                     рт. ст.
-                </div><div class="current-weather__info-row current-weather__info-row_type_time">Данные на <?=$city->fact->getObservationTime()?></div></span>
+                </div><div class="current-weather__info-row current-weather__info-row_type_time">Данные
+                    на <?= $city->fact->getObservationTime() ?></div></span>
 
-            <div class="current-weather__yesterday">Вчера в это время: <?=$city->yesterday->temperature?></div>
+            <div class="current-weather__yesterday">Вчера в это время: <?= $city->yesterday->temperature ?></div>
         </div>
     </div>
     <div class="forecasts">
@@ -134,30 +147,28 @@ $city = $parser->getResult();
 
 
                         echo '<li class="forecast-brief__item">
-                        <div class="forecast-brief__item-date '.($day->checkWeekend($key, true) ? "forecast-brief__item-date_weekend_yes" : "").'"><span
-                                class="forecast-brief__item-dayname">'.$day->getDayName($key).'</span><span
-                                class="forecast-brief__item-day">'.$day->getDayNumber($key).' '.($i>0? "" : $day->getMonthName($key)).'</span></div>
+                        <div class="forecast-brief__item-date ' . ($day->checkWeekend($key, true) ? "forecast-brief__item-date_weekend_yes" : "") . '"><span
+                                class="forecast-brief__item-dayname">' . $day->getDayName($key) . '</span><span
+                                class="forecast-brief__item-day">' . $day->getDayNumber($key) . ' ' . ($i > 0 ? "" : $day->getMonthName($key)) . '</span></div>
                         <div class="forecast-brief__item-description t t_c_17"><i
-                                class="icon icon_thumb_'.$day->day->getIcon().' icon_size_30" data-width="30"></i>
+                                class="icon icon_thumb_' . $day->day->getIcon() . ' icon_size_30" data-width="30"></i>
 
-                            <div class="forecast-brief__item-comment">'.$day->day->weather_type.'</div>
+                            <div class="forecast-brief__item-comment">' . $day->day->weather_type . '</div>
                             <div class="forecast-brief__item-temp-day" title="Максимальная температура днём">
-                             '.$day->day->temperature_avg.'
-                             '.($i>0? "" : "днём").'
+                             ' . $day->day->temperature_avg . '
+                             ' . ($i > 0 ? "" : "днём") . '
                             </div>
                         </div>
                         <div class="forecast-brief__item-temp-night t t_c_9" title="Минимальная температура ночью">
-                            '.$day->night->temperature_avg.'
-                            '.($i>0? "" : "ночью").'
+                            ' . $day->night->temperature_avg . '
+                            ' . ($i > 0 ? "" : "ночью") . '
                         </div>
                     </li>';
 
-                        if($day->checkWeekend($key))
+                        if ($day->checkWeekend($key))
                             echo '<li class="forecast-brief__item forecast-brief__item_gap">&nbsp;</li>';
 
                         $i++;
-
-
 
 
                     }

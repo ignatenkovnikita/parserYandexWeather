@@ -361,7 +361,7 @@ wbr {
     margin: 0;
     padding: 0;
     opacity: 0;
-    background: url(//yastatic.net/islands/_/K4e4uv8u9I9wb1fi17d8-3Jnr2A.svg) 50% 50% no-repeat;
+    background: url(../img/islands/_/K4e4uv8u9I9wb1fi17d8-3Jnr2A.svg) 50% 50% no-repeat;
     -o-transition: visibility 0s linear .1s, opacity .1s ease-out;
     transition: visibility 0s linear .1s, opacity .1s ease-out
 }
@@ -638,11 +638,11 @@ a.button:hover, a.button:link, a.button:visited {
     width: 16px;
     height: 16px;
     margin-right: 4px;
-    background-image: url(//yastatic.net/islands/_/oUNQX9v2uuXXQn8niWKRZn8Gyi4.svg)
+    background-image: url(../img/islands/_/oUNQX9v2uuXXQn8niWKRZn8Gyi4.svg)
 }
 
 .i-ua_inlinesvg_no .user__enter .image {
-    background-image: url(//yastatic.net/islands/_/D_bdPNqv6HJlssMZjqrlv7FqetY.png)
+    background-image: url(../img/islands/_/D_bdPNqv6HJlssMZjqrlv7FqetY.png)
 }
 
 .button_theme_pseudo, a.button_theme_pseudo {
@@ -770,23 +770,23 @@ a.button:hover, a.button:link, a.button:visited {
 }
 
 .domik_logo_ru .domik__logo {
-    background-image: url(//yastatic.net/islands/_/Orn8-RME0XxLA-ebI97ULK2F-So.svg)
+    background-image: url(../img/islands/_/Orn8-RME0XxLA-ebI97ULK2F-So.svg)
 }
 
 .i-ua_inlinesvg_no .domik_logo_ru .domik__logo {
-    background-image: url(//yastatic.net/islands/_/aEONkK0c0SOJJah4j9b1zV1dgIo.png)
+    background-image: url(../img/islands/_/aEONkK0c0SOJJah4j9b1zV1dgIo.png)
 }
 
 .domik_logo_en .domik__logo {
-    background-image: url(//yastatic.net/islands/_/utUbmkP7HeT9jIUHxddGVB--3eE.svg)
+    background-image: url(../img/islands/_/utUbmkP7HeT9jIUHxddGVB--3eE.svg)
 }
 
 .i-ua_inlinesvg_no .domik_logo_en .domik__logo {
-    background-image: url(//yastatic.net/islands/_/9j2aoXUotMVh7jV_xMsVobBjOTw.png)
+    background-image: url(../img/islands/_/9j2aoXUotMVh7jV_xMsVobBjOTw.png)
 }
 
 .domik_type_popup .domik__roof-body {
-    background-image: url(//yastatic.net/islands/_/KgdwPgIzONqtRgeD5E8NOnpzxU.svg)
+    background-image: url(../img/islands/_/KgdwPgIzONqtRgeD5E8NOnpzxU.svg)
 }
 
 .domik_type_popup .domik__content {
@@ -1107,88 +1107,88 @@ body .domik__popup > .popup__content {
 }
 
 .auth__social-icon_code_vk:before {
-    background-image: url(//yastatic.net/islands/_/eMXFIEy8cUGDWiaTMiAtDpXNSE0.svg)
+    background-image: url(../img/islands/_/eMXFIEy8cUGDWiaTMiAtDpXNSE0.svg)
 }
 
 .auth__social-icon_code_vk:after {
-    background-image: url(//yastatic.net/islands/_/wQ8H43tYFX2o5cqMN1USUx-_dtk.svg)
+    background-image: url(../img/islands/_/wQ8H43tYFX2o5cqMN1USUx-_dtk.svg)
 }
 
 .auth__social-icon_code_fb:before {
-    background-image: url(//yastatic.net/islands/_/UlnBC6PMQ_29dt2fTD_BzD7qfkY.svg)
+    background-image: url(../img/islands/_/UlnBC6PMQ_29dt2fTD_BzD7qfkY.svg)
 }
 
 .auth__social-icon_code_fb:after {
-    background-image: url(//yastatic.net/islands/_/deNW0d8Q33Ly16KNXumhNZCeC0A.svg)
+    background-image: url(../img/islands/_/deNW0d8Q33Ly16KNXumhNZCeC0A.svg)
 }
 
 .auth__social-icon_code_tw:before {
-    background-image: url(//yastatic.net/islands/_/mjnRNyA7Ju8_OyYhzC_hD0T4nOI.svg)
+    background-image: url(../img/islands/_/mjnRNyA7Ju8_OyYhzC_hD0T4nOI.svg)
 }
 
 .auth__social-icon_code_tw:after {
-    background-image: url(//yastatic.net/islands/_/Ws2kbrGIn2AKSyUOhQQqsdEqKEM.svg)
+    background-image: url(../img/islands/_/Ws2kbrGIn2AKSyUOhQQqsdEqKEM.svg)
 }
 
 .auth__social-icon_code_mr:before {
-    background-image: url(//yastatic.net/islands/_/B8oMvWuq4oXi_cMBvy_Nmlqn3FM.svg)
+    background-image: url(../img/islands/_/B8oMvWuq4oXi_cMBvy_Nmlqn3FM.svg)
 }
 
 .auth__social-icon_code_mr:after {
-    background-image: url(//yastatic.net/islands/_/3uP7vAwB2OJmNHYfYcgOi-1Ximc.svg)
+    background-image: url(../img/islands/_/3uP7vAwB2OJmNHYfYcgOi-1Ximc.svg)
 }
 
 .auth__social-icon_code_gg:before {
-    background-image: url(//yastatic.net/islands/_/SuYRv5DB6Nu3GvO9Bi018Zzh9LE.svg)
+    background-image: url(../img/islands/_/SuYRv5DB6Nu3GvO9Bi018Zzh9LE.svg)
 }
 
 .auth__social-icon_code_gg:after {
-    background-image: url(//yastatic.net/islands/_/S1-qWWyv85yFAtoHVvuxJXpOKA4.svg)
+    background-image: url(../img/islands/_/S1-qWWyv85yFAtoHVvuxJXpOKA4.svg)
 }
 
 .auth__social-icon_code_ok:before {
-    background-image: url(//yastatic.net/islands/_/sQ1cHQR5bk1nF85VZIQx9o536TY.svg)
+    background-image: url(../img/islands/_/sQ1cHQR5bk1nF85VZIQx9o536TY.svg)
 }
 
 .auth__social-icon_code_ok:after {
-    background-image: url(//yastatic.net/islands/_/hW81E7-bRm5C7PszZwPgkXyDmU0.svg)
+    background-image: url(../img/islands/_/hW81E7-bRm5C7PszZwPgkXyDmU0.svg)
 }
 
 .auth__social-icon_code_fs:before {
-    background-image: url(//yastatic.net/islands/_/XUiYymrNSID9cA5-4vCdJBHHWjQ.svg)
+    background-image: url(../img/islands/_/XUiYymrNSID9cA5-4vCdJBHHWjQ.svg)
 }
 
 .auth__social-icon_code_fs:after {
-    background-image: url(//yastatic.net/islands/_/LOR6bPz750w9ZNQ2aM8vHbPGOKo.svg)
+    background-image: url(../img/islands/_/LOR6bPz750w9ZNQ2aM8vHbPGOKo.svg)
 }
 
 .auth__social-icon_code_ig:before {
-    background-image: url(//yastatic.net/islands/_/jLep36bIS3MKs6xhhXSpwFpWX2k.svg)
+    background-image: url(../img/islands/_/jLep36bIS3MKs6xhhXSpwFpWX2k.svg)
 }
 
 .auth__social-icon_code_ig:after {
-    background-image: url(//yastatic.net/islands/_/8K9YNudM5ckGT6wuSKlbs_vFCs.svg)
+    background-image: url(../img/islands/_/8K9YNudM5ckGT6wuSKlbs_vFCs.svg)
 }
 
 .auth__social-icon_code_lf:before {
-    background-image: url(//yastatic.net/islands/_/56z42I5VcE4nMo55ntK8OP8hP_M.svg)
+    background-image: url(../img/islands/_/56z42I5VcE4nMo55ntK8OP8hP_M.svg)
 }
 
 .auth__social-icon_code_lf:after {
-    background-image: url(//yastatic.net/islands/_/viQk-K2w4shAtw69BNa4xf6FWRE.svg)
+    background-image: url(../img/islands/_/viQk-K2w4shAtw69BNa4xf6FWRE.svg)
 }
 
 .auth__social-icon_code_lj:before {
-    background-image: url(//yastatic.net/islands/_/Dg42FJEtubgK66erqMJcv_2yReM.svg)
+    background-image: url(../img/islands/_/Dg42FJEtubgK66erqMJcv_2yReM.svg)
 }
 
 .auth__social-icon_code_lj:after {
-    background-image: url(//yastatic.net/islands/_/XRrrHZ-C8qhhmhNOldtV_8VLMP0.svg)
+    background-image: url(../img/islands/_/XRrrHZ-C8qhhmhNOldtV_8VLMP0.svg)
 }
 
 .i-ua_inlinesvg_no .auth__social-icon {
     opacity: .3;
-    background-image: url(//yastatic.net/islands/_/HoCGzOxB7JV3GEIrHail3KscnWE.png)
+    background-image: url(../img/islands/_/HoCGzOxB7JV3GEIrHail3KscnWE.png)
 }
 
 .i-ua_inlinesvg_no .auth__social-icon_code_vk {
@@ -1427,21 +1427,21 @@ body .domik__popup > .popup__content {
     vertical-align: baseline;
     pointer-events: none;
     opacity: 0;
-    background: url(//yastatic.net/islands/_/Oq3IErH0K_vitiMeybKAyeEw0B8.svg) 0 100% no-repeat;
+    background: url(../img/islands/_/Oq3IErH0K_vitiMeybKAyeEw0B8.svg) 0 100% no-repeat;
     -o-transition: bottom .05s ease-out 0s, opacity .05s ease-out 0s, visibility 0s ease-out .05s;
     transition: bottom .05s ease-out 0s, opacity .05s ease-out 0s, visibility 0s ease-out .05s
 }
 
 .i-ua_inlinesvg_no .checkbox_size_s .checkbox__tick {
-    background-image: url(//yastatic.net/islands/_/IsxYQhW2POwwQMkiUwAi1SfbbsY.png)
+    background-image: url(../img/islands/_/IsxYQhW2POwwQMkiUwAi1SfbbsY.png)
 }
 
 .i-ua_inlinesvg_no .checkbox_size_m .checkbox__tick {
-    background-image: url(//yastatic.net/islands/_/6bvCeno64U8f57fb08T-Chhcyy4.png)
+    background-image: url(../img/islands/_/6bvCeno64U8f57fb08T-Chhcyy4.png)
 }
 
 .i-ua_inlinesvg_no .checkbox_disabled_yes .checkbox__tick {
-    background-image: url(//yastatic.net/islands/_/VGqcK7fNT6AdmzkAEeegQ5wZTqU.png)
+    background-image: url(../img/islands/_/VGqcK7fNT6AdmzkAEeegQ5wZTqU.png)
 }
 
 .checkbox_theme_normal {
@@ -1725,13 +1725,13 @@ body .domik__popup > .popup__content {
 
 .dropdown-menu__popup_user_yes .image.image_icon_mail {
     width: 16px;
-    background: url(//yastatic.net/islands/_/pMdBZqJNWC1CT7ka65Z2DePS0wI.svg) no-repeat
+    background: url(../img/islands/_/pMdBZqJNWC1CT7ka65Z2DePS0wI.svg) no-repeat
 }
 
 .dropdown-menu__popup_user_yes .image.image_icon_disk {
     left: 8px;
     width: 21px;
-    background: url(//yastatic.net/islands/_/dcGK2V5nFAQFzVDv_twFRDO8tNg.svg) no-repeat
+    background: url(../img/islands/_/dcGK2V5nFAQFzVDv_twFRDO8tNg.svg) no-repeat
 }
 
 .i-ua_inlinesvg_no .dropdown-menu__popup_user_yes .image {
@@ -1739,11 +1739,11 @@ body .domik__popup > .popup__content {
 }
 
 .i-ua_inlinesvg_no .dropdown-menu__popup_user_yes .image_icon_mail {
-    background-image: url(//yastatic.net/islands/_/Us7qp78ek-60yhOUOFb5qzmjEfE.png)
+    background-image: url(../img/islands/_/Us7qp78ek-60yhOUOFb5qzmjEfE.png)
 }
 
 .i-ua_inlinesvg_no .dropdown-menu__popup_user_yes .image_icon_disk {
-    background-image: url(//yastatic.net/islands/_/yl2xCjPe51vbuLJ_3topNMqyPbc.png)
+    background-image: url(../img/islands/_/yl2xCjPe51vbuLJ_3topNMqyPbc.png)
 }
 
 .dropdown-menu__popup.dropdown-menu__popup_user_yes .link:hover {
@@ -1944,227 +1944,227 @@ body .domik__popup > .popup__content {
 }
 
 .suggest2-item__icon_weather_bkn-plus-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-plus-ra-d.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-plus-ra-d.svg)
 }
 
 .suggest2-item__icon_weather_bkn-plus-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-plus-ra-n.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-plus-ra-n.svg)
 }
 
 .suggest2-item__icon_weather_bkn-plus-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-plus-sn-d.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-plus-sn-d.svg)
 }
 
 .suggest2-item__icon_weather_bkn-plus-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-plus-sn-n.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-plus-sn-n.svg)
 }
 
 .suggest2-item__icon_weather_bkn-minus-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-minus-ra-d.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-minus-ra-d.svg)
 }
 
 .suggest2-item__icon_weather_bkn-minus-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-minus-ra-n.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-minus-ra-n.svg)
 }
 
 .suggest2-item__icon_weather_bkn-minus-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-minus-sn-d.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-minus-sn-d.svg)
 }
 
 .suggest2-item__icon_weather_bkn-minus-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-minus-sn-n.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-minus-sn-n.svg)
 }
 
 .suggest2-item__icon_weather_bkn-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-d.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-d.svg)
 }
 
 .suggest2-item__icon_weather_bkn-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-n.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-n.svg)
 }
 
 .suggest2-item__icon_weather_bkn-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-ra-d.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-ra-d.svg)
 }
 
 .suggest2-item__icon_weather_bkn-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-ra-n.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-ra-n.svg)
 }
 
 .suggest2-item__icon_weather_bkn-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-sn-d.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-sn-d.svg)
 }
 
 .suggest2-item__icon_weather_bkn-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-sn-n.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-sn-n.svg)
 }
 
 .suggest2-item__icon_weather_bl {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bl.svg)
+    background-image: url(../img/weather/i/icons/islands/32/bl.svg)
 }
 
 .suggest2-item__icon_weather_fg-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/fg-d.svg)
+    background-image: url(../img/weather/i/icons/islands/32/fg-d.svg)
 }
 
 .suggest2-item__icon_weather_fg-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/fg-n.svg)
+    background-image: url(../img/weather/i/icons/islands/32/fg-n.svg)
 }
 
 .suggest2-item__icon_weather_ovc {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc.svg)
+    background-image: url(../img/weather/i/icons/islands/32/ovc.svg)
 }
 
 .suggest2-item__icon_weather_ovc-plus-ra {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-plus-ra.svg)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-plus-ra.svg)
 }
 
 .suggest2-item__icon_weather_ovc-plus-sn {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-plus-sn.svg)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-plus-sn.svg)
 }
 
 .suggest2-item__icon_weather_ovc-minus-ra {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-minus-ra.svg)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-minus-ra.svg)
 }
 
 .suggest2-item__icon_weather_ovc-minus-sn {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-minus-sn.svg)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-minus-sn.svg)
 }
 
 .suggest2-item__icon_weather_ovc-gr {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-gr.svg)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-gr.svg)
 }
 
 .suggest2-item__icon_weather_ovc-ra {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-ra.svg)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-ra.svg)
 }
 
 .suggest2-item__icon_weather_ovc-sn {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-sn.svg)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-sn.svg)
 }
 
 .suggest2-item__icon_weather_ovc-ts-ra {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-ts-ra.svg)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-ts-ra.svg)
 }
 
 .suggest2-item__icon_weather_skc-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/skc-d.svg)
+    background-image: url(../img/weather/i/icons/islands/32/skc-d.svg)
 }
 
 .suggest2-item__icon_weather_skc-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/skc-n.svg)
+    background-image: url(../img/weather/i/icons/islands/32/skc-n.svg)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-plus-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-plus-ra-d.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-plus-ra-d.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-plus-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-plus-ra-n.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-plus-ra-n.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-plus-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-plus-sn-d.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-plus-sn-d.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-plus-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-plus-sn-n.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-plus-sn-n.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-minus-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-minus-ra-d.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-minus-ra-d.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-minus-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-minus-ra-n.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-minus-ra-n.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-minus-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-minus-sn-d.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-minus-sn-d.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-minus-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-minus-sn-n.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-minus-sn-n.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-d.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-d.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-n.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-n.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-ra-d.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-ra-d.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-ra-n.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-ra-n.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-sn-d.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-sn-d.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bkn-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bkn-sn-n.png)
+    background-image: url(../img/weather/i/icons/islands/32/bkn-sn-n.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_bl {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/bl.png)
+    background-image: url(../img/weather/i/icons/islands/32/bl.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_fg-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/fg-d.png)
+    background-image: url(../img/weather/i/icons/islands/32/fg-d.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_fg-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/fg-n.png)
+    background-image: url(../img/weather/i/icons/islands/32/fg-n.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_ovc {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc.png)
+    background-image: url(../img/weather/i/icons/islands/32/ovc.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_ovc-plus-ra {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-plus-ra.png)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-plus-ra.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_ovc-plus-sn {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-plus-sn.png)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-plus-sn.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_ovc-minus-ra {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-minus-ra.png)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-minus-ra.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_ovc-minus-sn {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-minus-sn.png)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-minus-sn.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_ovc-gr {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-gr.png)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-gr.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_ovc-ra {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-ra.png)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-ra.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_ovc-sn {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-sn.png)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-sn.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_ovc-ts-ra {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/ovc-ts-ra.png)
+    background-image: url(../img/weather/i/icons/islands/32/ovc-ts-ra.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_skc-d {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/skc-d.png)
+    background-image: url(../img/weather/i/icons/islands/32/skc-d.png)
 }
 
 .suggest2-detect_inlinesvg_no .suggest2-item__icon_weather_skc-n {
-    background-image: url(//yastatic.net/weather/i/icons/islands/32/skc-n.png)
+    background-image: url(../img/weather/i/icons/islands/32/skc-n.png)
 }
 
 .suggest2-item_type_icon .suggest2-item__fact {
@@ -2908,259 +2908,259 @@ body[class*=i-ua_platform] .debug {
 }
 
 .icon_thumb_bkn-p-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_+ra_d.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_+ra_d.svg)
 }
 
 .icon_thumb_bkn-p-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_+ra_n.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_+ra_n.svg)
 }
 
 .icon_thumb_bkn-p-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_+sn_d.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_+sn_d.svg)
 }
 
 .icon_thumb_bkn-p-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_+sn_n.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_+sn_n.svg)
 }
 
 .icon_thumb_bkn-m-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_-ra_d.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_-ra_d.svg)
 }
 
 .icon_thumb_bkn-m-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_-ra_n.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_-ra_n.svg)
 }
 
 .icon_thumb_bkn-m-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_-sn_d.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_-sn_d.svg)
 }
 
 .icon_thumb_bkn-m-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_-sn_n.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_-sn_n.svg)
 }
 
 .icon_thumb_bkn-d {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_d.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_d.svg)
 }
 
 .icon_thumb_bkn-n {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_n.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_n.svg)
 }
 
 .icon_thumb_bkn-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_ra_d.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_ra_d.svg)
 }
 
 .icon_thumb_bkn-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_ra_n.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_ra_n.svg)
 }
 
 .icon_thumb_bkn-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_sn_d.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_sn_d.svg)
 }
 
 .icon_thumb_bkn-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bkn_sn_n.svg)
+    background-image: url(../img/weather/i/icons/svg/bkn_sn_n.svg)
 }
 
 .icon_thumb_bl {
-    background-image: url(//yastatic.net/weather/i/icons/svg/bl.svg)
+    background-image: url(../img/weather/i/icons/svg/bl.svg)
 }
 
 .icon_thumb_fg-d {
-    background-image: url(//yastatic.net/weather/i/icons/svg/fg_d.svg)
+    background-image: url(../img/weather/i/icons/svg/fg_d.svg)
 }
 
 .icon_thumb_fg-n {
-    background-image: url(//yastatic.net/weather/i/icons/svg/fg_n.svg)
+    background-image: url(../img/weather/i/icons/svg/fg_n.svg)
 }
 
 .icon_thumb_ovc {
-    background-image: url(//yastatic.net/weather/i/icons/svg/ovc.svg)
+    background-image: url(../img/weather/i/icons/svg/ovc.svg)
 }
 
 .icon_thumb_ovc-p-ra {
-    background-image: url(//yastatic.net/weather/i/icons/svg/ovc_+ra.svg)
+    background-image: url(../img/weather/i/icons/svg/ovc_+ra.svg)
 }
 
 .icon_thumb_ovc-p-sn {
-    background-image: url(//yastatic.net/weather/i/icons/svg/ovc_+sn.svg)
+    background-image: url(../img/weather/i/icons/svg/ovc_+sn.svg)
 }
 
 .icon_thumb_ovc-m-ra {
-    background-image: url(//yastatic.net/weather/i/icons/svg/ovc_-ra.svg)
+    background-image: url(../img/weather/i/icons/svg/ovc_-ra.svg)
 }
 
 .icon_thumb_ovc-ra-sn {
-    background-image: url(//yastatic.net/weather/i/icons/svg/ovc_ra_sn.svg)
+    background-image: url(../img/weather/i/icons/svg/ovc_ra_sn.svg)
 }
 
 .icon_thumb_ovc-m-sn {
-    background-image: url(//yastatic.net/weather/i/icons/svg/ovc_-sn.svg)
+    background-image: url(../img/weather/i/icons/svg/ovc_-sn.svg)
 }
 
 .icon_thumb_ovc-gr {
-    background-image: url(//yastatic.net/weather/i/icons/svg/ovc_gr.svg)
+    background-image: url(../img/weather/i/icons/svg/ovc_gr.svg)
 }
 
 .icon_thumb_ovc-ra {
-    background-image: url(//yastatic.net/weather/i/icons/svg/ovc_ra.svg)
+    background-image: url(../img/weather/i/icons/svg/ovc_ra.svg)
 }
 
 .icon_thumb_ovc-sn {
-    background-image: url(//yastatic.net/weather/i/icons/svg/ovc_sn.svg)
+    background-image: url(../img/weather/i/icons/svg/ovc_sn.svg)
 }
 
 .icon_thumb_ovc-ts-ra {
-    background-image: url(//yastatic.net/weather/i/icons/svg/ovc_ts_ra.svg)
+    background-image: url(../img/weather/i/icons/svg/ovc_ts_ra.svg)
 }
 
 .icon_thumb_skc-d {
-    background-image: url(//yastatic.net/weather/i/icons/svg/skc_d.svg)
+    background-image: url(../img/weather/i/icons/svg/skc_d.svg)
 }
 
 .icon_thumb_skc-n {
-    background-image: url(//yastatic.net/weather/i/icons/svg/skc_n.svg)
+    background-image: url(../img/weather/i/icons/svg/skc_n.svg)
 }
 
 .icon_thumb_strm {
-    background-image: url(//yastatic.net/weather/i/icons/svg/strm.svg)
+    background-image: url(../img/weather/i/icons/svg/strm.svg)
 }
 
 .icon_thumb_wnd {
-    background-image: url(//yastatic.net/weather/i/icons/svg/wnd.svg)
+    background-image: url(../img/weather/i/icons/svg/wnd.svg)
 }
 
 .icon_thumb_water {
-    background-image: url(//yastatic.net/weather/i/icons/svg/water.svg)
+    background-image: url(../img/weather/i/icons/svg/water.svg)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-p-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_+ra_n.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_+ra_n.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-p-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_+ra_d.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_+ra_d.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-p-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_+sn_d.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_+sn_d.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-p-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_+sn_n.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_+sn_n.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-m-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_-sn_d.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_-sn_d.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-sn-d {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_sn_d.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_sn_d.png)
 }
 
 .i-ua_svg_no .icon_thumb_fg-n {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/fg_n.png)
+    background-image: url(../img/weather/i/icons/48x48/fg_n.png)
 }
 
 .i-ua_svg_no .icon_thumb_ovc-gr {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/ovc_gr.png)
+    background-image: url(../img/weather/i/icons/48x48/ovc_gr.png)
 }
 
 .i-ua_svg_no .icon_thumb_ovc-sn {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/ovc_sn.png)
+    background-image: url(../img/weather/i/icons/48x48/ovc_sn.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-m-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_-sn_n.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_-sn_n.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-sn-n {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_sn_n.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_sn_n.png)
 }
 
 .i-ua_svg_no .icon_thumb_ovc {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/ovc.png)
+    background-image: url(../img/weather/i/icons/48x48/ovc.png)
 }
 
 .i-ua_svg_no .icon_thumb_ovc-ts-ra {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/ovc_ts_ra.png)
+    background-image: url(../img/weather/i/icons/48x48/ovc_ts_ra.png)
 }
 
 .i-ua_svg_no .icon_thumb_strm {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/strm.png)
+    background-image: url(../img/weather/i/icons/48x48/strm.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-d {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_d.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_d.png)
 }
 
 .i-ua_svg_no .icon_thumb_bl {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bl.png)
+    background-image: url(../img/weather/i/icons/48x48/bl.png)
 }
 
 .i-ua_svg_no .icon_thumb_ovc-p-ra {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/ovc_+ra.png)
+    background-image: url(../img/weather/i/icons/48x48/ovc_+ra.png)
 }
 
 .i-ua_svg_no .icon_thumb_ovc-ra {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/ovc_ra.png)
+    background-image: url(../img/weather/i/icons/48x48/ovc_ra.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-n {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_n.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_n.png)
 }
 
 .i-ua_svg_no .icon_thumb_ovc-p-sn {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/ovc_+sn.png)
+    background-image: url(../img/weather/i/icons/48x48/ovc_+sn.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-m-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_-ra_d.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_-ra_d.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-ra-d {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_ra_d.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_ra_d.png)
 }
 
 .i-ua_svg_no .icon_thumb_ovc-m-ra {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/ovc_-ra.png)
+    background-image: url(../img/weather/i/icons/48x48/ovc_-ra.png)
 }
 
 .i-ua_svg_no .icon_thumb_ovc-ra-sn {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/ovc_ra_sn.png)
+    background-image: url(../img/weather/i/icons/48x48/ovc_ra_sn.png)
 }
 
 .i-ua_svg_no .icon_thumb_skc-d {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/skc_d.png)
+    background-image: url(../img/weather/i/icons/48x48/skc_d.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-m-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_-ra_n.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_-ra_n.png)
 }
 
 .i-ua_svg_no .icon_thumb_bkn-ra-n {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/bkn_ra_n.png)
+    background-image: url(../img/weather/i/icons/48x48/bkn_ra_n.png)
 }
 
 .i-ua_svg_no .icon_thumb_fg-d {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/fg_d.png)
+    background-image: url(../img/weather/i/icons/48x48/fg_d.png)
 }
 
 .i-ua_svg_no .icon_thumb_ovc-m-sn {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/ovc_-sn.png)
+    background-image: url(../img/weather/i/icons/48x48/ovc_-sn.png)
 }
 
 .i-ua_svg_no .icon_thumb_skc-n {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/skc_n.png)
+    background-image: url(../img/weather/i/icons/48x48/skc_n.png)
 }
 
 .i-ua_svg_no .icon_thumb_wnd {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/wnd.png)
+    background-image: url(../img/weather/i/icons/48x48/wnd.png)
 }
 
 .i-ua_svg_no .icon_thumb_water {
-    background-image: url(//yastatic.net/weather/i/icons/48x48/water.png)
+    background-image: url(../img/weather/i/icons/48x48/water.png)
 }
 
 .i-ua_svg_no .icon[class*=icon_thumb] {
@@ -3596,7 +3596,7 @@ body[class*=i-ua_platform] .debug {
 }
 
 .i-ua_svg_yes .weather-table__body-cell_type_wind .icon {
-    background-image: url(//yastatic.net/weather/i/wind/arrow_dark.svg)
+    background-image: url(../img/weather/i/wind/arrow_dark.svg)
 }
 
 .weather-table__body-cell_type_wind-strength {
@@ -3676,7 +3676,7 @@ body[class*=i-ua_platform] .debug {
 
 .icon_wind {
     vertical-align: top;
-    background-image: url(//yastatic.net/weather/i/wind/arrow.svg)
+    background-image: url(../img/weather/i/wind/arrow.svg)
 }
 
 .icon_wind_s {
@@ -3792,35 +3792,35 @@ body[class*=i-ua_platform] .debug {
 }
 
 .i-ua_svg_no .icon_wind_ssw, .i-ua_svg_no .icon_wind_sw, .i-ua_svg_no .icon_wind_wsw {
-    background-image: url(//yastatic.net/weather/i/wind/i18n/sw.gif)
+    background-image: url(../img/weather/i/wind/i18n/sw.gif)
 }
 
 .i-ua_svg_no .icon_wind_nnw, .i-ua_svg_no .icon_wind_w, .i-ua_svg_no .icon_wind_wnw {
-    background-image: url(//yastatic.net/weather/i/wind/i18n/w.gif)
+    background-image: url(../img/weather/i/wind/i18n/w.gif)
 }
 
 .i-ua_svg_no .icon_wind_nw {
-    background-image: url(//yastatic.net/weather/i/wind/i18n/nw.gif)
+    background-image: url(../img/weather/i/wind/i18n/nw.gif)
 }
 
 .i-ua_svg_no .icon_wind_n, .i-ua_svg_no .icon_wind_nne {
-    background-image: url(//yastatic.net/weather/i/wind/i18n/n.gif)
+    background-image: url(../img/weather/i/wind/i18n/n.gif)
 }
 
 .i-ua_svg_no .icon_wind_ne {
-    background-image: url(//yastatic.net/weather/i/wind/i18n/ne.gif)
+    background-image: url(../img/weather/i/wind/i18n/ne.gif)
 }
 
 .i-ua_svg_no .icon_wind_e, .i-ua_svg_no .icon_wind_ene, .i-ua_svg_no .icon_wind_ese {
-    background-image: url(//yastatic.net/weather/i/wind/i18n/e.gif)
+    background-image: url(../img/weather/i/wind/i18n/e.gif)
 }
 
 .i-ua_svg_no .icon_wind_se {
-    background-image: url(//yastatic.net/weather/i/wind/i18n/se.gif)
+    background-image: url(../img/weather/i/wind/i18n/se.gif)
 }
 
 .i-ua_svg_no .icon_wind_s {
-    background-image: url(//yastatic.net/weather/i/wind/i18n/s.gif)
+    background-image: url(../img/weather/i/wind/i18n/s.gif)
 }
 
 .i-ua_svg_no .icon[class*=icon_wind] {
@@ -3836,131 +3836,131 @@ body[class*=i-ua_platform] .debug {
 }
 
 .icon_moon_0, .icon_moon_16 {
-    background-image: url(//yastatic.net/weather/i/moon/00.svg)
+    background-image: url(../img/weather/i/moon/00.svg)
 }
 
 .icon_moon_1 {
-    background-image: url(//yastatic.net/weather/i/moon/01.svg)
+    background-image: url(../img/weather/i/moon/01.svg)
 }
 
 .icon_moon_2 {
-    background-image: url(//yastatic.net/weather/i/moon/02.svg)
+    background-image: url(../img/weather/i/moon/02.svg)
 }
 
 .icon_moon_3 {
-    background-image: url(//yastatic.net/weather/i/moon/03.svg)
+    background-image: url(../img/weather/i/moon/03.svg)
 }
 
 .icon_moon_4 {
-    background-image: url(//yastatic.net/weather/i/moon/04.svg)
+    background-image: url(../img/weather/i/moon/04.svg)
 }
 
 .icon_moon_5 {
-    background-image: url(//yastatic.net/weather/i/moon/05.svg)
+    background-image: url(../img/weather/i/moon/05.svg)
 }
 
 .icon_moon_6 {
-    background-image: url(//yastatic.net/weather/i/moon/06.svg)
+    background-image: url(../img/weather/i/moon/06.svg)
 }
 
 .icon_moon_7 {
-    background-image: url(//yastatic.net/weather/i/moon/07.svg)
+    background-image: url(../img/weather/i/moon/07.svg)
 }
 
 .icon_moon_8 {
-    background-image: url(//yastatic.net/weather/i/moon/08.svg)
+    background-image: url(../img/weather/i/moon/08.svg)
 }
 
 .icon_moon_9 {
-    background-image: url(//yastatic.net/weather/i/moon/09.svg)
+    background-image: url(../img/weather/i/moon/09.svg)
 }
 
 .icon_moon_10 {
-    background-image: url(//yastatic.net/weather/i/moon/10.svg)
+    background-image: url(../img/weather/i/moon/10.svg)
 }
 
 .icon_moon_11 {
-    background-image: url(//yastatic.net/weather/i/moon/11.svg)
+    background-image: url(../img/weather/i/moon/11.svg)
 }
 
 .icon_moon_12 {
-    background-image: url(//yastatic.net/weather/i/moon/12.svg)
+    background-image: url(../img/weather/i/moon/12.svg)
 }
 
 .icon_moon_13 {
-    background-image: url(//yastatic.net/weather/i/moon/13.svg)
+    background-image: url(../img/weather/i/moon/13.svg)
 }
 
 .icon_moon_14 {
-    background-image: url(//yastatic.net/weather/i/moon/14.svg)
+    background-image: url(../img/weather/i/moon/14.svg)
 }
 
 .icon_moon_15 {
-    background-image: url(//yastatic.net/weather/i/moon/15.svg)
+    background-image: url(../img/weather/i/moon/15.svg)
 }
 
 .i-ua_svg_no .icon_moon_0, .i-ua_svg_no .icon_moon_16 {
-    background-image: url(//yastatic.net/weather/i/moon/00.gif)
+    background-image: url(../img/weather/i/moon/00.gif)
 }
 
 .i-ua_svg_no .icon_moon_1 {
-    background-image: url(//yastatic.net/weather/i/moon/01.gif)
+    background-image: url(../img/weather/i/moon/01.gif)
 }
 
 .i-ua_svg_no .icon_moon_2 {
-    background-image: url(//yastatic.net/weather/i/moon/02.gif)
+    background-image: url(../img/weather/i/moon/02.gif)
 }
 
 .i-ua_svg_no .icon_moon_3 {
-    background-image: url(//yastatic.net/weather/i/moon/03.gif)
+    background-image: url(../img/weather/i/moon/03.gif)
 }
 
 .i-ua_svg_no .icon_moon_4 {
-    background-image: url(//yastatic.net/weather/i/moon/04.gif)
+    background-image: url(../img/weather/i/moon/04.gif)
 }
 
 .i-ua_svg_no .icon_moon_5 {
-    background-image: url(//yastatic.net/weather/i/moon/05.gif)
+    background-image: url(../img/weather/i/moon/05.gif)
 }
 
 .i-ua_svg_no .icon_moon_6 {
-    background-image: url(//yastatic.net/weather/i/moon/06.gif)
+    background-image: url(../img/weather/i/moon/06.gif)
 }
 
 .i-ua_svg_no .icon_moon_7 {
-    background-image: url(//yastatic.net/weather/i/moon/07.gif)
+    background-image: url(../img/weather/i/moon/07.gif)
 }
 
 .i-ua_svg_no .icon_moon_8 {
-    background-image: url(//yastatic.net/weather/i/moon/08.gif)
+    background-image: url(../img/weather/i/moon/08.gif)
 }
 
 .i-ua_svg_no .icon_moon_9 {
-    background-image: url(//yastatic.net/weather/i/moon/09.gif)
+    background-image: url(../img/weather/i/moon/09.gif)
 }
 
 .i-ua_svg_no .icon_moon_10 {
-    background-image: url(//yastatic.net/weather/i/moon/10.gif)
+    background-image: url(../img/weather/i/moon/10.gif)
 }
 
 .i-ua_svg_no .icon_moon_11 {
-    background-image: url(//yastatic.net/weather/i/moon/11.gif)
+    background-image: url(../img/weather/i/moon/11.gif)
 }
 
 .i-ua_svg_no .icon_moon_12 {
-    background-image: url(//yastatic.net/weather/i/moon/12.gif)
+    background-image: url(../img/weather/i/moon/12.gif)
 }
 
 .i-ua_svg_no .icon_moon_13 {
-    background-image: url(//yastatic.net/weather/i/moon/13.gif)
+    background-image: url(../img/weather/i/moon/13.gif)
 }
 
 .i-ua_svg_no .icon_moon_14 {
-    background-image: url(//yastatic.net/weather/i/moon/14.gif)
+    background-image: url(../img/weather/i/moon/14.gif)
 }
 
 .i-ua_svg_no .icon_moon_15 {
-    background-image: url(//yastatic.net/weather/i/moon/15.gif)
+    background-image: url(../img/weather/i/moon/15.gif)
 }
 
 .forecast-brief {
@@ -4578,7 +4578,7 @@ body[class*=i-ua_platform] .debug {
     box-sizing: border-box;
     border: 2px solid transparent;
     border-radius: 100px;
-    background-image: url(//yastatic.net/islands/_/lMheXM1Y3XcixfNpGnrupH6cjfc.gif);
+    background-image: url(../img/islands/_/lMheXM1Y3XcixfNpGnrupH6cjfc.gif);
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))
 }
