@@ -9,11 +9,11 @@ error_reporting(-1);
 
 require_once('vendor/autoload.php');
 
+require_once('config.php');
 
 use YandexWeather\ParserYandexWeather;
 
-$parser = new ParserYandexWeather(27643);
-//$parser->load();
+$parser = new ParserYandexWeather($settings['cityId'], $settings['parseUrl']);
 $city = $parser->getResult();
 
 //var_dump($city);
@@ -26,34 +26,8 @@ $city = $parser->getResult();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Прогноз погоды в Выксе на 10 дней — Яндекс.Погода</title>
-    <!--<script>;
-        (function (d, e, c, r) {
-            e = d.documentElement;
-            c = "className";
-            r = "replace";
-            e[c] = e[c][r]("i-ua_js_no", "i-ua_js_yes");
-            if (d.compatMode != "CSS1Compat")e[c] = e[c][r]("i-ua_css_standart", "i-ua_css_quirks")
-        })(document);
-        ;
-        (function (d, e, c, n, w, v, f) {
-            e = d.documentElement;
-            c = "className";
-            n = "createElementNS";
-            f = "firstChild";
-            w = "http://www.w3.org/2000/svg";
-            e[c] += " i-ua_svg_" + (!!d[n] && !!d[n](w, "svg").createSVGRect ? "yes" : "no");
-            v = d.createElement("div");
-            v.innerHTML = "<svg/>";
-            e[c] += " i-ua_inlinesvg_" + ((v[f] && v[f].namespaceURI) == w ? "yes" : "no");
-        })(document);
-        ;
-        (function (d, e, p) {
-            e = d.documentElement;
-            p = "placeholder";
-            e.className += " i-ua_" + p + (p in d.createElement("input") ? "_yes" : "_no")
-        })(document);</script>-->
-    <!--[if gt IE 9]><!-->
+    <title><?=$city->city?>.Прогноз погоды на 10 дней</title>
+
     <link rel="stylesheet" href="./css/_index.css">
     <!--<![endif]--><!--[if IE 6]>
     <link rel="stylesheet" href="./css/_index.ie6.css"/>
@@ -66,32 +40,8 @@ $city = $parser->getResult();
     <![endif]-->
     <link rel="stylesheet" href="./css/print.css" media="print">
     <meta name="viewport" content="width=1000">
-    <meta name="description"
-          content="Подробный прогноз погоды для Выксы на сегодня, завтра, неделю, 10 дней. Температура воздуха и воды, осадки, давление и влажность, скорость ветра. Погодные карты, информер для сайта и информация о климате регионов. ">
-    <meta property="og:title" content="Прогноз погоды в Выксе на 10 дней  — Яндекс.Погода">
-    <meta property="og:description"
-          content="Подробный прогноз погоды для Выксы на сегодня, завтра, неделю, 10 дней. Температура воздуха и воды, осадки, давление и влажность, скорость ветра. Погодные карты, информер для сайта и информация о климате регионов. ">
-    <meta property="og:image" content="/og_image.png">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Яндекс.Погода">
-    <link rel="shortcut icon" href="https://pogoda.yandex.ru/favicon.ico">
-    <meta name="msapplication-TileImage" content="/tile-square-transp.png">
-    <meta name="msapplication-TileColor" content="#ee0000">
-    <meta name="application-name" content="Яндекс.Погода">
-    <meta name="msapplication-square70x70logo" content="/tile-tiny-transp.png">
-    <meta name="msapplication-square150x150logo" content="/tile-square-transp.png">
-    <meta name="msapplication-wide310x150logo" content="/tile-wide-transp.png">
-    <meta name="msapplication-square310x310logo" content="/tile-large-transp.png">
-    <link rel="search" type="application/opensearchdescription+xml" title="Яндекс.Погода"
-          href="https://pogoda.yandex.ru/opensearch.ru.xml">
-    <link rel="canonical" href="https://pogoda.yandex.ru/vyksa">
-    <style type="text/css"></style>
-
 </head>
-<body
-    class="b-page b-page_type_index inquire geo-stat b-page__body i-ua i-ua_interaction_yes i-global i-bem b-page_js_inited inquire_js_inited i-ua_platform_other i-ua_js_inited i-global_js_inited"
-    data-bem="{&quot;b-page&quot;:{},&quot;inquire&quot;:{&quot;inquire&quot;:{&quot;top&quot;:&quot;.content__top a&quot;,&quot;btm&quot;:&quot;.info__ratatuy a&quot;},&quot;level&quot;:2,&quot;maxLevel&quot;:3},&quot;geo-stat&quot;:{},&quot;i-ua&quot;:{},&quot;i-global&quot;:{&quot;lang&quot;:&quot;ru&quot;,&quot;tld&quot;:&quot;ru&quot;,&quot;content-region&quot;:&quot;ru&quot;,&quot;click-host&quot;:&quot;//clck.yandex.ru&quot;,&quot;passport-host&quot;:&quot;https://passport.yandex.ru&quot;,&quot;pass-host&quot;:&quot;https://pass.yandex.ru&quot;,&quot;social-host&quot;:&quot;https://social.yandex.ru&quot;,&quot;export-host&quot;:&quot;https://export.yandex.ru&quot;,&quot;login&quot;:&quot;MustangXP&quot;,&quot;lego-static-host&quot;:&quot;//yastatic.net/lego/2.10-142&quot;,&quot;id&quot;:&quot;weather&quot;,&quot;host&quot;:&quot;https://pogoda.yandex.ru&quot;,&quot;user-region&quot;:&quot;ru&quot;,&quot;secret-key&quot;:&quot;yafd339789e7f51da41042bbfe20da711&quot;,&quot;retpath&quot;:&quot;https://pogoda.yandex.ru/vyksa/&quot;,&quot;social-retpath&quot;:&quot;https://pogoda.yandex.ru/social-broker__closer.html&quot;,&quot;uid&quot;:&quot;16370760&quot;,&quot;yu&quot;:&quot;1168825731435355130&quot;,&quot;rid&quot;:20040,&quot;urid&quot;:47,&quot;slug&quot;:&quot;vyksa&quot;,&quot;metrikaId&quot;:115080}}"
-    data-interaction="pointer">
+<body>
 <div class="content">
     <div class="content__top clearfix">
         <div class="navigation-city"><h1 class="title title_level_1"><?=$city->city?>. Погода</h1></div>

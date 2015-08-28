@@ -12,15 +12,17 @@ namespace YandexWeather;
 class ParserYandexWeather {
 
     private $_citiyId;
-    private $_url = "https://export.yandex.ru/weather-ng/forecasts/";
+    private $_url;
 
-    private $data = array();
+    private $data = [];
+    private $error = [];
+    private $success = [];
 
     /**
      * Construct $id is cityId
      * @param int $id
      */
-    public function __construct($id = 27643){
+    public function __construct($id = 27643, $url){
         $this->_citiyId = $id;
     }
 
@@ -39,10 +41,12 @@ class ParserYandexWeather {
         curl_setopt($ch, CURLOPT_USERAGENT, $userAgent);
         $output = curl_exec($ch);
 
-
+        if(!curl_errno($ch))
+            $this->error[] = "Ошибка при загрузке погоды с веба.";
+        else
+            $this->success[] = "Погода упешно загружена с веба.";
 
         $this->saveToFile($output);
-
     }
 
     /**
@@ -51,9 +55,30 @@ class ParserYandexWeather {
      */
     private function saveToFile($output) {
         $fileName = $this->getFileName();
-        $fh = fopen($fileName, 'w');
-        fwrite($fh, $output);
-        fclose($fh);
+
+        if(is_writable($this->getFileName())) {
+            $fh = fopen($fileName, 'w');
+
+            if(fwrite($fh, $output))
+                $this->success[] = "Файл успешно сохранен.";
+            else
+                $this->error[] = "Ошибка при сохранении файла.";
+            fclose($fh);
+        }
+        else {
+            $this->error[] = "Нет доступа на запись в файл.";
+        }
+    }
+
+    public function logFormat() {
+        $str = "";
+
+        if($this->error)
+            $str .= "Ошибки: ".implode(" ", $this->error)."<br>";
+        if($this->success)
+            $str .= "Успешно: ".implode(" ", $this->success)."<br>";
+
+        return $str;
     }
 
 

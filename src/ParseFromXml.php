@@ -25,10 +25,7 @@ class ParseFromXml {
 
     public function __construct($fileName)
     {
-        $this->xml = simplexml_load_file($fileName);
-
-
-
+        $this->xml = @simplexml_load_file($fileName);
     }
 
     function array_search_recursive($needle, $haystack, &$indexes=array())
@@ -50,6 +47,10 @@ class ParseFromXml {
     }
 
     public function parse() {
+
+        // check xml load
+        if(!$this->xml)
+            return false;
 
         $city = new City();
         foreach($this->xml->attributes() as $key => $value) {
