@@ -55,13 +55,13 @@ class ParseFromXml {
         $city = new City();
         foreach($this->xml->attributes() as $key => $value) {
             if(isset(Mapping::mapCity()[$key]))
-                $city->{Mapping::mapCity()[$key]} = (string) $value;
+                $city->{Mapping::mapCity()[$key]} = (string) $this->encoding($value);
         }
 
         $fact = new Detail();
         foreach ($this->xml->fact[0] as $key => $value) {
             if(isset(Mapping::mapDetail()[$key])) {
-                $fact->{Mapping::mapDetail()[$key]} = (string) $value;
+                $fact->{Mapping::mapDetail()[$key]} = (string) $this->encoding($value);
             }
 
         }
@@ -70,7 +70,7 @@ class ParseFromXml {
         $fact = new Detail();
         foreach ($this->xml->yesterday[0] as $key => $value) {
             if(isset(Mapping::mapDetail()[$key])) {
-                $fact->{Mapping::mapDetail()[$key]} = (string) $value;
+                $fact->{Mapping::mapDetail()[$key]} = (string) $this->encoding($value);
             }
 
         }
@@ -81,7 +81,7 @@ class ParseFromXml {
             $day = new Day();
             foreach ($value as $key => $value1) {
                 if(isset(Mapping::mapDay()[$key])) {
-                    $day->{Mapping::mapDay()[$key]} = (string) $value1;
+                    $day->{Mapping::mapDay()[$key]} = (string) $this->encoding($value1);
                 }
                 //var_dump($value1->attributes()["typeid"]);
 
@@ -91,14 +91,14 @@ class ParseFromXml {
                 $detail = new Detail();
                 foreach ($value2 as $key3 => $value3) {
                     if(isset(Mapping::mapDetail()[$key3])) {
-                        $detail->{Mapping::mapDetail()[$key3]} = (string) $value3;
+                        $detail->{Mapping::mapDetail()[$key3]} = (string) $this->encoding($value3);
                     }
                     //echo $key3."<br>";
                     if(isset(Mapping::mapDetail()["inner"][$key3])) {
 
                         //echo Mapping::mapFact()["inner"][$key3]."<br>";
 
-                        $detail->{Mapping::mapDetail()["inner"][$key3]} = (string) $value3->avg;
+                        $detail->{Mapping::mapDetail()["inner"][$key3]} = (string) $this->encoding($value3->avg);
                     }
 
                     //var_dump((string) $value3->avg);
@@ -114,6 +114,10 @@ class ParseFromXml {
         $city->days = $days;
 
         return $city;
+    }
+
+    private function encoding($value) {
+        return iconv( "UTF-8", "windows-1251//TRANSLIT", $value);
     }
 
 
