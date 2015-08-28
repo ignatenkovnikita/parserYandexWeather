@@ -112,7 +112,7 @@ class ParserYandexWeather {
      * @return string
      */
     public function getFileName() {
-        return "city_" . $this->_citiyId . ".xml";
+        return __DIR__."/../city_" . $this->_citiyId . ".xml";
     }
 
 }

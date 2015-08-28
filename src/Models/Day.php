@@ -45,20 +45,20 @@ class Day{
     }
 
     public static function getMonthName($value) {
-        $listMonths = ['','СЏРЅРІР°СЂСЏ','С„РµРІСЂР°Р»СЏ','РјР°СЂС‚Р°','Р°РїСЂРµР»СЏ','РјР°СЏ','РёСЋРЅСЏ','РёСЋР»СЏ','Р°РІРіСѓСЃС‚Р°','СЃРµРЅС‚СЏР±СЂСЏ','РѕРєС‚СЏР±СЂСЏ','РЅРѕСЏР±СЂСЏ','РґРµРєР°Р±СЂСЏ'];
+        $listMonths = ['','января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
         return $listMonths[date("n", strtotime($value))];
     }
 
     public static function getDayName($value) {
         $str = "";
 
-        $listDays = ['РІСЃ','РїРЅ', 'РІС‚', 'СЃСЂ', 'С‡С‚', 'РїС‚', 'СЃР±'];
+        $listDays = ['вс','пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
 
         $date = Date('d.m.Y', strtotime("+1 days"));
         $match_date = date('d.m.Y', strtotime($value));
 
         if($date == $match_date)
-            $str = "Р—РђР’РўР Рђ";
+            $str = "ЗАВТРА";
         else {
             $str = $listDays[date("w", strtotime($value))];
 

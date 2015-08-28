@@ -60,14 +60,14 @@ class Detail {
      */
     public function getWindDirection() {
         $windDirection =  [
-            's'=>'Ð®',
-            'n'=>'Ð¡',
-            'w'=>'Ð—',
-            'e'=>'Ð’',
-            'sw'=>'Ð®Ð—',
-            'se'=>'Ð®Ð’',
-            'nw'=>'Ð¡Ð—',
-            'ne'=>'Ð¡Ð’'];
+            's'=>'Þ',
+            'n'=>'Ñ',
+            'w'=>'Ç',
+            'e'=>'Â',
+            'sw'=>'ÞÇ',
+            'se'=>'ÞÂ',
+            'nw'=>'ÑÇ',
+            'ne'=>'ÑÂ'];
 
         if(isset($windDirection[$this->wind_direction]))
             return $windDirection[$this->wind_direction];
