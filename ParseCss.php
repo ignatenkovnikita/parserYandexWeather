@@ -7,7 +7,10 @@
  */
 
 
-
+/**
+ * Load img in yandex css
+ * Class ParseCss
+ */
 class ParseCss {
 
     public $dir = "css/";

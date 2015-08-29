@@ -2,44 +2,44 @@
 
 <div class="content">
     <div class="content__top clearfix">
-        <div class="navigation-city"><h1 class="title title_level_1"><?= \YaWeather\ParseXml::encoding($city->city) ?>. Погода</h1></div>
+        <div class="navigation-city"><h1 class="title title_level_1"><?= $city->city ?>. РџРѕРіРѕРґР°</h1></div>
         <div class="current-weather">
-            <div class="current-weather__today">Сейчас <span
+            <div class="current-weather__today">РЎРµР№С‡Р°СЃ <span
                     class="current-weather__local-time"><?= date("H:i") ?></span></div>
             <span class="current-weather__col current-weather__col_type_now t_c_13"><i
                     class="icon icon_size_48 icon_thumb_<?= $city->fact->getIcon() ?>" data-width="48"></i><span
-                    class="current-weather__comment">пасмурно</span><div
+                    class="current-weather__comment">РїР°СЃРјСѓСЂРЅРѕ</span><div
                     class="current-weather__thermometer current-weather__thermometer_type_now"><?= $city->fact->temperature ?>
-                    °C
+                    В°C
                 </div></span><span class="current-weather__col current-weather__col_type_after t_c_8"><span
-                    class="current-weather__thermometer-name">ночью</span><i
+                    class="current-weather__thermometer-name">РЅРѕС‡СЊСЋ</span><i
                     class="icon icon_thumb_<?= $city->getCurrentDay()->night->getIcon() ?> icon_size_30"
                     data-width="30"></i><div
                     class="current-weather__thermometer current-weather__thermometer_type_after"><?= $city->getCurrentDay()->night->temperature_avg ?>
                 </div></span><span class="current-weather__col current-weather__col_type_after t_c_11"><span
-                    class="current-weather__thermometer-name">днём</span><i
+                    class="current-weather__thermometer-name">РґРЅС‘Рј</span><i
                     class="icon icon_thumb_<?= $city->getCurrentDay()->day->getIcon() ?> icon_size_30"
                     data-width="30"></i><div
                     class="current-weather__thermometer current-weather__thermometer_type_after"><?= $city->getCurrentDay()->day->temperature_avg ?>
                 </div></span><span class="current-weather__col current-weather__info"><div
                     class="current-weather__info-row">
-                    <span class="current-weather__info-label">Восход: </span><?= $city->getCurrentDay()->sunrise ?><span
-                        class="current-weather__info-label current-weather__info-label_type_sunset">Закат: </span><?= $city->getCurrentDay()->sunset ?>
+                    <span class="current-weather__info-label">Р’РѕСЃС…РѕРґ: </span><?= $city->getCurrentDay()->sunrise ?><span
+                        class="current-weather__info-label current-weather__info-label_type_sunset">Р—Р°РєР°С‚: </span><?= $city->getCurrentDay()->sunset ?>
                 </div><div class="current-weather__info-row current-weather__info-row_type_wind"><span
-                        class="current-weather__info-label">Ветер: </span> <span
-                        class="wind-speed"><?= $city->fact->wind_speed ?> м/с</span> <abbr
-                        class=" icon-abbr" title="Ветер: северо-восточный"><?= \YaWeather\ParseXml::encoding($city->fact->getWindDirection()) ?></abbr><i
+                        class="current-weather__info-label">Р’РµС‚РµСЂ: </span> <span
+                        class="wind-speed"><?= $city->fact->wind_speed ?> Рј/СЃ</span> <abbr
+                        class=" icon-abbr" title="Р’РµС‚РµСЂ: СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕС‡РЅС‹Р№"><?= $city->fact->getWindDirection() ?></abbr><i
                         class="icon icon_size_12 icon_wind_<?= $city->fact->wind_direction ?> icon_wind"
                         data-width="12"></i></div><div
                     class="current-weather__info-row"><span
-                        class="current-weather__info-label">Влажность: </span><?= $city->fact->humidity ?>%
+                        class="current-weather__info-label">Р’Р»Р°Р¶РЅРѕСЃС‚СЊ: </span><?= $city->fact->humidity ?>%
                 </div><div class="current-weather__info-row"><span
-                        class="current-weather__info-label">Давление: </span><?= $city->fact->pressure ?> мм
-                    рт. ст.
-                </div><div class="current-weather__info-row current-weather__info-row_type_time">Данные
-                    на <?= $city->fact->getObservationTime() ?></div></span>
+                        class="current-weather__info-label">Р”Р°РІР»РµРЅРёРµ: </span><?= $city->fact->pressure ?> РјРј
+                    СЂС‚. СЃС‚.
+                </div><div class="current-weather__info-row current-weather__info-row_type_time">Р”Р°РЅРЅС‹Рµ
+                    РЅР° <?= $city->fact->getObservationTime() ?></div></span>
 
-            <div class="current-weather__yesterday">Вчера в это время: <?= $city->yesterday->temperature ?></div>
+            <div class="current-weather__yesterday">Р’С‡РµСЂР° РІ СЌС‚Рѕ РІСЂРµРјСЏ: <?= $city->yesterday->temperature ?></div>
         </div>
     </div>
     <div class="forecasts">
@@ -56,20 +56,20 @@
 
                         echo '<li class="forecast-brief__item">
                         <div class="forecast-brief__item-date ' . ($day->checkWeekend($key, true) ? "forecast-brief__item-date_weekend_yes" : "") . '"><span
-                                class="forecast-brief__item-dayname">' . \YaWeather\ParseXml::encoding($day->getDayName($key)) . '</span><span
-                                class="forecast-brief__item-day">' . \YaWeather\ParseXml::encoding($day->getDayNumber($key) . ' ' . ($i > 0 ? "" : $day->getMonthName($key))) . '</span></div>
+                                class="forecast-brief__item-dayname">' . $day->getDayName($key) . '</span><span
+                                class="forecast-brief__item-day">' . $day->getDayNumber($key) . ' ' . ($i > 0 ? "" : $day->getMonthName($key)) . '</span></div>
                         <div class="forecast-brief__item-description t_c_17"><i
                                 class="icon icon_thumb_' . $day->day->getIcon() . ' icon_size_30" data-width="30"></i>
 
-                            <div class="forecast-brief__item-comment">' . \YaWeather\ParseXml::encoding($day->day->weather_type) . '</div>
-                            <div class="forecast-brief__item-temp-day" title="Максимальная температура днём">
+                            <div class="forecast-brief__item-comment">' . $day->day->weather_type . '</div>
+                            <div class="forecast-brief__item-temp-day" title="РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ С‚РµРјРїРµСЂР°С‚СѓСЂР° РґРЅС‘Рј">
                              ' . $day->day->temperature_avg . '
-                             ' . ($i > 0 ? "" : "днём") . '
+                             ' . ($i > 0 ? "" : "РґРЅС‘Рј") . '
                             </div>
                         </div>
-                        <div class="forecast-brief__item-temp-night t_c_9" title="Минимальная температура ночью">
+                        <div class="forecast-brief__item-temp-night t_c_9" title="РњРёРЅРёРјР°Р»СЊРЅР°СЏ С‚РµРјРїРµСЂР°С‚СѓСЂР° РЅРѕС‡СЊСЋ">
                             ' . $day->night->temperature_avg . '
-                            ' . ($i > 0 ? "" : "ночью") . '
+                            ' . ($i > 0 ? "" : "РЅРѕС‡СЊСЋ") . '
                         </div>
                     </li>';
 
