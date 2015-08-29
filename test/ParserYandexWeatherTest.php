@@ -1,5 +1,5 @@
 <?php
-use YandexWeather\ParserYandexWeather;
+use YaWeather\YaWeather;
 
 /**
  * Created by PhpStorm.
@@ -13,7 +13,7 @@ class ParserYandexWeatherTest extends PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->parser = new ParserYandexWeather(27643);
+        $this->parser = new YaWeather(27643);
     }
 
     public function testLoadFile() {

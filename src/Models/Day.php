@@ -6,7 +6,7 @@
  * Time: 1:28
  */
 
-namespace YandexWeather\Models;
+namespace YaWeather\Models;
 
 
 class Day{
@@ -28,7 +28,12 @@ class Day{
     public $day_short;
     public $night_short;
 
-
+    /**
+     *
+     * @param $value
+     * @param bool $weekend
+     * @return bool
+     */
     public static function CheckWeekend($value, $weekend = false)
     {
         $dayNumber = date('w', strtotime($value));
@@ -45,20 +50,20 @@ class Day{
     }
 
     public static function getMonthName($value) {
-        $listMonths = ['','января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+        $listMonths = ['','СЏРЅРІР°СЂСЏ','С„РµРІСЂР°Р»СЏ','РјР°СЂС‚Р°','Р°РїСЂРµР»СЏ','РјР°СЏ','РёСЋРЅСЏ','РёСЋР»СЏ','Р°РІРіСѓСЃС‚Р°','СЃРµРЅС‚СЏР±СЂСЏ','РѕРєС‚СЏР±СЂСЏ','РЅРѕСЏР±СЂСЏ','РґРµРєР°Р±СЂСЏ'];
         return $listMonths[date("n", strtotime($value))];
     }
 
     public static function getDayName($value) {
         $str = "";
 
-        $listDays = ['вс','пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+        $listDays = ['РІСЃ','РїРЅ', 'РІС‚', 'СЃСЂ', 'С‡С‚', 'РїС‚', 'СЃР±'];
 
         $date = Date('d.m.Y', strtotime("+1 days"));
         $match_date = date('d.m.Y', strtotime($value));
 
         if($date == $match_date)
-            $str = "ЗАВТРА";
+            $str = "Р—РђР’РўР Рђ";
         else {
             $str = $listDays[date("w", strtotime($value))];
 

@@ -4858,3 +4858,9 @@ body[class*=i-ua_platform] .debug {
     min-height: 100px;
     padding-left: 50px
 }
+
+
+
+.content-main {
+    background: none;
+}

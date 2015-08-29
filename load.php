@@ -10,11 +10,9 @@ error_reporting(-1);
 
 require_once('vendor/autoload.php');
 
-require_once('config.php');
-
-use YandexWeather\ParserYandexWeather;
+use YaWeather\YaWeather;
 
 
-$parser = new ParserYandexWeather($settings['cityId'], $settings['parseUrl']);
+$parser = new YaWeather();
 $parser->load();
 echo $parser->logFormat();

@@ -6,7 +6,7 @@
  * Time: 1:22
  */
 
-namespace YandexWeather\Models;
+namespace YaWeather\Models;
 
 
 class City {
@@ -21,6 +21,10 @@ class City {
     public $days;
 
 
+    /**
+     * Get current model day
+     * @return string
+     */
     public function getCurrentDay() {
         $current = date("Y-m-d");
         if(isset($this->days[$current]))
@@ -29,6 +33,10 @@ class City {
             return "not found current day";
     }
 
+    /**
+     * Get List models Day
+     * @return mixed
+     */
     public function getListDays() {
         $current = date("Y-m-d");
         if(isset($this->days[$current]))
@@ -37,6 +45,10 @@ class City {
         return $this->days;
     }
 
+    /**
+     * Get yesterday model day
+     * @return string
+     */
     public function getYesterday() {
         $yesterday = date("Y-m-d", time() - 86400);
 

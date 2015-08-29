@@ -6,7 +6,7 @@
  * Time: 5:32
  */
 
-namespace YandexWeather;
+namespace YaWeather;
 
 
 class Mapping {
@@ -53,7 +53,7 @@ class Mapping {
         );
     }
 
-    public static function map() {
+    /*public static function map() {
         return [
             "forecast" => [
                 "name" => "City",
@@ -79,6 +79,6 @@ class Mapping {
                 ]
             ]
         ];
-    }
+    }*/
 
 }
