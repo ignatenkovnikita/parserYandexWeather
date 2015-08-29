@@ -102,12 +102,16 @@ namespace YaWeather {
         /**
          * show page html.php
          */
-        public function show() {
+        public function show($cp1251 = false) {
+            $file = "html.php";
+            if($cp1251)
+                $file = "htmlcp1251.php";
+
             $city = $this->getResult();
 
             $path = str_replace($_SERVER['DOCUMENT_ROOT'], "", __DIR__)."./../css";
 
-            require_once(__DIR__.'/../html.php');
+            require_once(__DIR__.'/../'.$file);
         }
 
         /**
