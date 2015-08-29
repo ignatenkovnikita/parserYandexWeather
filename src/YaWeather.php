@@ -101,6 +101,7 @@ namespace YaWeather {
 
         /**
          * show page html.php
+         * @param bool $cp1251
          */
         public function show($cp1251 = false) {
             $file = "html.php";
