@@ -22,6 +22,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/parserYandexWeather/vendor/autoload.p
 use YaWeather\YaWeather;
 $cityId = 27643; // List of Town https://pogoda.yandex.ru/static/cities.xml
 $parser = new YaWeather($cityId);
+$parser->load(); // load xml
 $parser->show(); // get html as pogoda.yandex
 
 

@@ -13,6 +13,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/parserYandexWeather/vendor/autoload.p
 use YaWeather\YaWeather;
 
 $parser = new YaWeather();
+$parser->load();
 $parser->show();
 
 
