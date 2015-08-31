@@ -54,18 +54,13 @@ namespace YaWeather {
         private function saveToFile($output) {
             $fileName = $this->getFileName();
 
-            if(is_writable($this->getFileName())) {
-                $fh = fopen($fileName, 'w');
+            $fh = fopen($fileName, 'w');
 
-                if(fwrite($fh, $output))
-                    $this->_success[] = "File success write.";
-                else
-                    $this->_error[] = "Error file save.";
-                fclose($fh);
-            }
-            else {
-                $this->_error[] = "Access Denied write file. Path file - ".$fileName;
-            }
+            if(fwrite($fh, $output))
+                $this->_success[] = "File success write.";
+            else
+                $this->_error[] = "Error file save.";
+            fclose($fh);
         }
 
         /**
@@ -95,7 +90,7 @@ namespace YaWeather {
             if($parse->parse())
                 return $parse->parse();
             else
-                return "Error parse document";
+                return false;
 
         }
 
@@ -112,7 +107,8 @@ namespace YaWeather {
 
             $path = str_replace($_SERVER['DOCUMENT_ROOT'], "", __DIR__)."./../css";
 
-            require_once(__DIR__.'/../'.$file);
+            if($city != null)
+                require_once(__DIR__.'/../'.$file);
         }
 
         /**

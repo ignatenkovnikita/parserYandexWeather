@@ -4861,6 +4861,61 @@ body[class*=i-ua_platform] .debug {
 
 
 
+/* override css for only one suite */
+.sh_tb_2 ul {
+    padding: 0 0 30px;
+    margin: 0;
+    margin-bottom: 47px;
+}
+.sh_tb_2 ul li {
+    padding: 0;
+    /*padding-bottom: 20px;*/
+    margin: 0px;
+}
+.sh_tb_2 ul li:before {
+    content: '';
+    padding-right: 0;
+}
 .content-main {
     background: none;
 }
+.content {
+    padding: 0;
+}
+
+.forecast-brief__item-description {
+    margin: 0;
+    position: relative;
+    /* padding-bottom: 10px; */
+    height: 100px;
+    margin: 0;
+    padding-bottom: 14px;
+}
+.forecast-brief__item-temp-day {
+    position: absolute;
+    bottom: -5px;
+    width: 10%;
+    margin-left: 0;
+    padding: 7px 0 12px 14px;
+    font-size: 16px;
+}
+.forecast-brief__item {
+    width: 17%;
+}
+.forecast-brief__item-temp-day {
+    width: 70%;
+}
+.forecast-brief__item-temp-night {
+    width: 17%;
+}
+@media (max-width:1270px){
+    .forecast-brief__item:nth-last-child(-n+1) {
+        display: none;
+    }
+}
+@media (max-width:1125px){
+    .forecast-brief__item:nth-last-child(-n+2) {
+        display: none;
+    }
+}
+

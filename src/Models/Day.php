@@ -63,7 +63,7 @@ class Day{
         $match_date = date('d.m.Y', strtotime($value));
 
         if($date == $match_date)
-            $str = "ЗАВТРА";
+            $str = "Завтра";
         else {
             $str = $listDays[date("w", strtotime($value))];
 

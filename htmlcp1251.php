@@ -2,25 +2,24 @@
 
 <div class="content">
     <div class="content__top clearfix">
-        <div class="navigation-city"><h1 class="title title_level_1"><?= \YaWeather\ParseXml::encoding($city->city) ?>. Погода</h1></div>
         <div class="current-weather">
             <div class="current-weather__today">Сейчас <span
                     class="current-weather__local-time"><?= date("H:i") ?></span></div>
             <span class="current-weather__col current-weather__col_type_now t_c_13"><i
                     class="icon icon_size_48 icon_thumb_<?= $city->fact->getIcon() ?>" data-width="48"></i><span
-                    class="current-weather__comment">пасмурно</span><div
-                    class="current-weather__thermometer current-weather__thermometer_type_now"><?= $city->fact->temperature ?>
+                    class="current-weather__comment"><?= \YaWeather\ParseXml::encoding($city->fact->weather_type) ?></span><div
+                    class="current-weather__thermometer current-weather__thermometer_type_now"><?= $city->fact->getTemperatureStr() ?>
                     °C
                 </div></span><span class="current-weather__col current-weather__col_type_after t_c_8"><span
                     class="current-weather__thermometer-name">ночью</span><i
                     class="icon icon_thumb_<?= $city->getCurrentDay()->night->getIcon() ?> icon_size_30"
                     data-width="30"></i><div
-                    class="current-weather__thermometer current-weather__thermometer_type_after"><?= $city->getCurrentDay()->night->temperature_avg ?>
+                    class="current-weather__thermometer current-weather__thermometer_type_after"><?= $city->getCurrentDay()->night->getTemperatureAvgStr() ?>
                 </div></span><span class="current-weather__col current-weather__col_type_after t_c_11"><span
                     class="current-weather__thermometer-name">днём</span><i
                     class="icon icon_thumb_<?= $city->getCurrentDay()->day->getIcon() ?> icon_size_30"
                     data-width="30"></i><div
-                    class="current-weather__thermometer current-weather__thermometer_type_after"><?= $city->getCurrentDay()->day->temperature_avg ?>
+                    class="current-weather__thermometer current-weather__thermometer_type_after"><?= $city->getCurrentDay()->day->getTemperatureAvgStr() ?>
                 </div></span><span class="current-weather__col current-weather__info"><div
                     class="current-weather__info-row">
                     <span class="current-weather__info-label">Восход: </span><?= $city->getCurrentDay()->sunrise ?><span
@@ -54,6 +53,7 @@
                     foreach ($city->getListDays() as $key => $day) {
 
 
+
                         echo '<li class="forecast-brief__item">
                         <div class="forecast-brief__item-date ' . ($day->checkWeekend($key, true) ? "forecast-brief__item-date_weekend_yes" : "") . '"><span
                                 class="forecast-brief__item-dayname">' . \YaWeather\ParseXml::encoding($day->getDayName($key)) . '</span><span
@@ -63,20 +63,24 @@
 
                             <div class="forecast-brief__item-comment">' . \YaWeather\ParseXml::encoding($day->day->weather_type) . '</div>
                             <div class="forecast-brief__item-temp-day" title="Максимальная температура днём">
-                             ' . $day->day->temperature_avg . '
+                             ' . $day->day->getTemperatureAvgStr() . '
                              ' . ($i > 0 ? "" : "днём") . '
                             </div>
                         </div>
                         <div class="forecast-brief__item-temp-night t_c_9" title="Минимальная температура ночью">
-                            ' . $day->night->temperature_avg . '
+                            ' . $day->night->getTemperatureAvgStr() . '
                             ' . ($i > 0 ? "" : "ночью") . '
                         </div>
                     </li>';
 
+                        $i++;
+
+                        if($i == 6) break;
+
                         if ($day->checkWeekend($key))
                             echo '<li class="forecast-brief__item forecast-brief__item_gap">&nbsp;</li>';
 
-                        $i++;
+
 
 
                     }

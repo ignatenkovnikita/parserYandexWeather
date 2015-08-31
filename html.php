@@ -73,8 +73,10 @@
                         </div>
                     </li>';
 
-                        if ($day->checkWeekend($key))
+                        if ($day->checkWeekend($key)) {
                             echo '<li class="forecast-brief__item forecast-brief__item_gap">&nbsp;</li>';
+                        }
+
 
                         $i++;
 

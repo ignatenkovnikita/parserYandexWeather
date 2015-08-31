@@ -34,6 +34,15 @@ class Detail {
     public $ipad_image;
 
 
+
+    public function getTemperatureStr()
+    {
+        return $this->temperature > 0 ? '+'.$this->temperature : $this->temperature;
+    }
+
+    public function getTemperatureAvgStr() {
+        return $this->temperature_avg > 0 ? '+'.$this->temperature_avg : $this->temperature_avg;
+    }
     /**
      * Get current time
      * @return bool|string
