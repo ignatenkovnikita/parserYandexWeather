@@ -38,7 +38,7 @@
                 </div><div class="current-weather__info-row current-weather__info-row_type_time">Данные
                     на <?= $city->fact->getObservationTime() ?></div></span>
 
-            <div class="current-weather__yesterday">Вчера в это время: <?= $city->yesterday->temperature ?></div>
+            <div class="current-weather__yesterday">Вчера в это время: <?= $city->yesterday->getTemperatureStr() ?></div>
         </div>
     </div>
     <div class="forecasts">
@@ -77,8 +77,12 @@
 
                         if($i == 6) break;
 
-                        if ($day->checkWeekend($key))
-                            echo '<li class="forecast-brief__item forecast-brief__item_gap">&nbsp;</li>';
+                        /*if ($day->checkWeekend($key) && $i <= 5)
+                            echo '<li class="forecast-brief__item forecast-brief__item_gap">&nbsp;</li>';*/
+
+
+
+
 
 
 
