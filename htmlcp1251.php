@@ -5,22 +5,22 @@
         <div class="current-weather">
             <div class="current-weather__today">Сейчас <span
                     class="current-weather__local-time"><?= date("H:i") ?></span></div>
-            <span class="current-weather__col current-weather__col_type_now t_c_13"><i
+            <span class="current-weather__col current-weather__col_type_now t_c_<?= $city->fact->temperature ?>"><i
                     class="icon icon_size_48 icon_thumb_<?= $city->fact->getIcon() ?>" data-width="48"></i><span
                     class="current-weather__comment"><?= \YaWeather\ParseXml::encoding($city->fact->weather_type) ?></span><div
                     class="current-weather__thermometer current-weather__thermometer_type_now"><?= $city->fact->getTemperatureStr() ?>
                     °C
-                </div></span><span class="current-weather__col current-weather__col_type_after t_c_8"><span
-                    class="current-weather__thermometer-name">ночью</span><i
-                    class="icon icon_thumb_<?= $city->getCurrentDay()->night->getIcon() ?> icon_size_30"
-                    data-width="30"></i><div
-                    class="current-weather__thermometer current-weather__thermometer_type_after"><?= $city->getCurrentDay()->night->getTemperatureAvgStr() ?>
-                </div></span><span class="current-weather__col current-weather__col_type_after t_c_11"><span
-                    class="current-weather__thermometer-name">днём</span><i
-                    class="icon icon_thumb_<?= $city->getCurrentDay()->day->getIcon() ?> icon_size_30"
-                    data-width="30"></i><div
-                    class="current-weather__thermometer current-weather__thermometer_type_after"><?= $city->getCurrentDay()->day->getTemperatureAvgStr() ?>
-                </div></span><span class="current-weather__col current-weather__info"><div
+                </div></span>
+            <?php
+                foreach ($city->getCurrentDay()->AdditionalState() as $key => $value) {
+                    echo '<span class="current-weather__col current-weather__col_type_after t_c_'.$value->temperature_avg.'"><span
+                        class="current-weather__thermometer-name">'.(\YaWeather\ParseXml::encoding($key)).'</span><i
+                        class="icon icon_thumb_'.$value->getIcon().' icon_size_30"
+                        data-width="30"></i><div
+                        class="current-weather__thermometer current-weather__thermometer_type_after">'.$value->getTemperatureAvgStr().'</div></span>';
+                    }
+            ?>
+            <span class="current-weather__col current-weather__info"><div
                     class="current-weather__info-row">
                     <span class="current-weather__info-label">Восход: </span><?= $city->getCurrentDay()->sunrise ?><span
                         class="current-weather__info-label current-weather__info-label_type_sunset">Закат: </span><?= $city->getCurrentDay()->sunset ?>
@@ -58,7 +58,7 @@
                         <div class="forecast-brief__item-date ' . ($day->checkWeekend($key, true) ? "forecast-brief__item-date_weekend_yes" : "") . '"><span
                                 class="forecast-brief__item-dayname">' . \YaWeather\ParseXml::encoding($day->getDayName($key)) . '</span><span
                                 class="forecast-brief__item-day">' . \YaWeather\ParseXml::encoding($day->getDayNumber($key) . ' ' . ($i > 0 ? "" : $day->getMonthName($key))) . '</span></div>
-                        <div class="forecast-brief__item-description t_c_17"><i
+                        <div class="forecast-brief__item-description t_c_' . $day->day->temperature_avg . '"><i
                                 class="icon icon_thumb_' . $day->day->getIcon() . ' icon_size_30" data-width="30"></i>
 
                             <div class="forecast-brief__item-comment">' . \YaWeather\ParseXml::encoding($day->day->weather_type) . '</div>
@@ -67,7 +67,7 @@
                              ' . ($i > 0 ? "" : "днём") . '
                             </div>
                         </div>
-                        <div class="forecast-brief__item-temp-night t_c_9" title="Минимальная температура ночью">
+                        <div class="forecast-brief__item-temp-night t_c_' . $day->day->temperature_avg . '" title="Минимальная температура ночью">
                             ' . $day->night->getTemperatureAvgStr() . '
                             ' . ($i > 0 ? "" : "ночью") . '
                         </div>

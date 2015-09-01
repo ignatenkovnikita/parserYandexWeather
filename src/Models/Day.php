@@ -18,6 +18,12 @@ class Day{
     const TYPE_DAY_SHORT = 5;
     const TYPE_NIGHT_SHORT = 6;
 
+    const HOUR_NIGHT = 7;
+    const HOUR_MORNING = 10;
+    const HOUR_DAY = 18;
+    const HOUR_EVENING = 23;
+
+
     public $sunrise;
     public $sunset;
 
@@ -74,12 +80,29 @@ class Day{
         return $str;
 
     }
-    /*public function __construct($data) {
-        foreach ($data as $key => $value) {
-            $this->{$key} = $value;
+
+    public function AdditionalState()
+    {
+        $arrAdditionWeather = [];
+        $hour = date("G");
+        if ($hour > self::HOUR_EVENING OR $hour <= self::HOUR_NIGHT) {
+            $arrAdditionWeather["Утром"] = $this->morning;
+            $arrAdditionWeather["Днём"] = $this->day;
+        }
+        if ($hour > self::HOUR_NIGHT && $hour <= self::HOUR_MORNING) {
+            $arrAdditionWeather["Днём"] = $this->day;
+            $arrAdditionWeather["Вечером"] = $this->evening;
+        }
+        if ($hour > self::HOUR_MORNING && $hour <= self::HOUR_DAY) {
+            $arrAdditionWeather["Вечером"] = $this->evening;
+            $arrAdditionWeather["Ночью"] = $this->night;
+        }
+        if ($hour > self::HOUR_DAY && $hour <= self::HOUR_EVENING) {
+            $arrAdditionWeather["Ночью"] = $this->night;
+            $arrAdditionWeather["Утром"] = $this->morning;
         }
 
-
-    }*/
+        return $arrAdditionWeather;
+    }
 
 }
