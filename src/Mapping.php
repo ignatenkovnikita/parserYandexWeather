@@ -49,7 +49,8 @@ class Mapping {
     public static function mapDay() {
         return array(
             "sunrise" => "sunrise",
-            "sunset" => "sunset"
+            "sunset" => "sunset",
+            "moon_phase" => "moon_phase"
         );
     }
 

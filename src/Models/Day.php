@@ -18,14 +18,15 @@ class Day{
     const TYPE_DAY_SHORT = 5;
     const TYPE_NIGHT_SHORT = 6;
 
-    const HOUR_NIGHT = 7;
-    const HOUR_MORNING = 10;
+    const HOUR_NIGHT = 6;
+    const HOUR_MORNING = 12;
     const HOUR_DAY = 18;
     const HOUR_EVENING = 23;
 
 
     public $sunrise;
     public $sunset;
+    public $moon_phase;
 
     public $morning;
     public $day;
@@ -103,6 +104,10 @@ class Day{
         }
 
         return $arrAdditionWeather;
+    }
+
+    public function getListDetail() {
+        return ["Утром" => $this->morning, "Днём" => $this->day, "Вечером" => $this->evening, "Ночью" => $this->night];
     }
 
 }

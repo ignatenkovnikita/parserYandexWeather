@@ -35,14 +35,29 @@ class Detail {
 
 
 
-    public function getTemperatureStr()
-    {
+    public function getTemperatureStr() {
         return $this->temperature > 0 ? '+'.$this->temperature : $this->temperature;
     }
 
     public function getTemperatureAvgStr() {
         return $this->temperature_avg > 0 ? '+'.$this->temperature_avg : $this->temperature_avg;
     }
+
+    public function getTemperatureFromStr() {
+        return $this->temperature_from > 0 ? '+'.$this->temperature_from : $this->temperature_from;
+    }
+
+    public function getTemperatureToStr() {
+        return $this->temperature_to > 0 ? '+'.$this->temperature_to : $this->temperature_to;
+    }
+
+    public function getTemperatureFromTo() {
+        if($this->temperature_from && $this->temperature_to)
+            return $this->getTemperatureFromStr().'...'.$this->getTemperatureToStr();
+        else
+            return $this->getTemperatureAvgStr();
+    }
+
     /**
      * Get current time
      * @return bool|string
