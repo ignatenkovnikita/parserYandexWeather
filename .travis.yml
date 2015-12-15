@@ -6,4 +6,5 @@ php:
   - '7.0'
   - hhvm
   - nightly
+script: composer install
 script: phpunit test\
