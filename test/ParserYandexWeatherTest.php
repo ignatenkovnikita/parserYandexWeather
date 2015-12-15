@@ -11,21 +11,38 @@ class ParserYandexWeatherTest extends PHPUnit_Framework_TestCase
 {
     protected $parser;
 
+    /**
+     * init
+     */
     protected function setUp()
     {
         $cityId = 27643;
         $this->parser = new YaWeather($cityId);
     }
 
+    /**
+     * test load file from yandex pogoda
+     */
     public function testLoadFile() {
         $this->parser->load();
         $this->assertFileExists($this->parser->getFileName());
     }
 
+    /**
+     * test parse file xml
+     */
     public function testParseFile() {
-        var_dump($this->parser->getResult());
         $this->assertEmpty(!$this->parser->getResult());
     }
+
+    /**
+     * test view error
+     */
+    public function testError() {
+        $this->assertEmpty($this->parser->getError());
+    }
+
+
 
 
 }

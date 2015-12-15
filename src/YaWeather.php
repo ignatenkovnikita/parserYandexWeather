@@ -79,6 +79,22 @@ namespace YaWeather {
             return $str;
         }
 
+        /**
+         * Get errors
+         * @return array
+         */
+        public function getError() {
+            return $this->_error;
+        }
+
+        /**
+         * Get success
+         * @return array
+         */
+        public function getSuccess(){
+            return $this->_success;
+        }
+
 
         /**
          * Return parse weather
