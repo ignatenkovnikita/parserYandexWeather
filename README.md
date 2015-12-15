@@ -8,6 +8,8 @@ Parser Weather from Yandex Weather
 git clone https://github.com/ignatenkovnikita/parserYandexWeather.git
 cd parserYandexWeather
 composer update
+OR
+composer require ignatenkovnikita/ya-weather
 ```
 After this, run **index.php** from your web browser.
 
