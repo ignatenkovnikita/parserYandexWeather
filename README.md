@@ -1,6 +1,7 @@
 # YaWeather
 Parser Weather from Yandex
 
+[![Build Status](https://travis-ci.org/ignatenkovnikita/parserYandexWeather.svg?branch=master)](https://travis-ci.org/ignatenkovnikita/parserYandexWeather)
 
 ## Installation
 ```sh
