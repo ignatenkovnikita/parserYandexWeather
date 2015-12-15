@@ -38,6 +38,7 @@ namespace YaWeather {
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_BINARYTRANSFER, true);
             curl_setopt($ch, CURLOPT_USERAGENT, $userAgent);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
             $output = curl_exec($ch);
 
             if(curl_errno($ch))
@@ -108,7 +109,7 @@ namespace YaWeather {
             $path = str_replace($_SERVER['DOCUMENT_ROOT'], "", __DIR__)."./../css";
 
             if($city != null)
-                require_once(__DIR__.'/../'.$file);
+                require_once(dirname(__DIR__).'/'.$file);
         }
 
         /**
@@ -124,7 +125,7 @@ namespace YaWeather {
          * @return string
          */
         public function getFileName() {
-            return __DIR__."/../city_" . $this->_citiyId . ".xml";
+            return dirname(__DIR__)."/city_" . $this->_citiyId . ".xml";
         }
 
     }

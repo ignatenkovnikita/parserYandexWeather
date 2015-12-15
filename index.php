@@ -8,15 +8,16 @@
 
 <?php
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/parserYandexWeather/vendor/autoload.php');
+require_once(__DIR__ . '/vendor/autoload.php');
 
 use YaWeather\YaWeather;
 
 $parser = new YaWeather();
-//$parser->load();
+$parser->load();
 $parser->show();
+//var_dump($parser->getResult());
 
-
+echo $parser->logFormat();
 
 ?>
 </body>
