@@ -1,5 +1,5 @@
 {
-    "name": "ignatenkov/YaWeather",
+    "name": "ignatenkov/ya-weather",
     "description": "Parser Yandex Weather",
     "require": {
 	"php": ">=5.3.0",
