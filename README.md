@@ -1,5 +1,5 @@
 # YaWeather
-Parser Weather from Yandex
+Parser Weather from Yandex Weather
 
 [![Build Status](https://travis-ci.org/ignatenkovnikita/parserYandexWeather.svg?branch=master)](https://travis-ci.org/ignatenkovnikita/parserYandexWeather)
 
