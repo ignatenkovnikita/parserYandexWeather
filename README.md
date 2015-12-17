@@ -2,6 +2,7 @@
 Parser Weather from Yandex Weather
 
 [![Build Status](https://travis-ci.org/ignatenkovnikita/parserYandexWeather.svg?branch=master)](https://travis-ci.org/ignatenkovnikita/parserYandexWeather)
+[![Dependency Status](https://www.versioneye.com/user/projects/56729494107997003e0005ec/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56729494107997003e0005ec)
 
 ## Installation
 ```sh
