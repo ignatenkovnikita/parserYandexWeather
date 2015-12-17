@@ -12,6 +12,7 @@
   </whitelist>
 </filter>
  <logging>
-        <log type="coverage-html" target="report/" charset="UTF-8" yui="true" />
+        <log type="coverage-xml" target="report/" charset="UTF-8" yui="true" />
+	<log type="coverage-html" target="report/" charset="UTF-8" yui="true" />
     </logging>
 </phpunit>
