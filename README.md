@@ -5,7 +5,9 @@ Parser Weather from Yandex Weather
 [![Dependency Status](https://www.versioneye.com/user/projects/56729494107997003e0005ec/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56729494107997003e0005ec)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ignatenkovnikita/parserYandexWeather/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ignatenkovnikita/parserYandexWeather/?branch=master)
 [![codecov.io](https://codecov.io/github/ignatenkovnikita/parserYandexWeather/coverage.svg?branch=master)](https://codecov.io/github/ignatenkovnikita/parserYandexWeather?branch=master)
-
+[![HHVM Status](http://hhvm.h4cc.de/badge/ignatenkovnikita/ya-weather.svg)](http://hhvm.h4cc.de/package/ignatenkovnikita/ya-weather)
+[![Code Coverage](https://scrutinizer-ci.com/g/yiisoft/yii2/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/yiisoft/yii2/?branch=master)
+[![Code Climate](https://codeclimate.com/github/ignatenkovnikita/parserYandexWeather/badges/gpa.svg)](https://codeclimate.com/github/ignatenkovnikita/parserYandexWeather)
 ## Installation
 ```sh
 git clone https://github.com/ignatenkovnikita/parserYandexWeather.git
