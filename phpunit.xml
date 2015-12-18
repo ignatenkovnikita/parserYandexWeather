@@ -2,18 +2,18 @@
 
 <phpunit bootstrap="vendor/autoload.php" colors="true">
     <testsuites>
-        <testsuite name="Example">
-            <file>./tests/ParserYandexWeatherTest.php</file>
+        <testsuite name="Parser Yandex Weather">
+            <directory>./test</directory>
         </testsuite>
     </testsuites>
-	<filter>
-  <whitelist processUncoveredFilesFromWhitelist="true">
-	<directory suffix=".php">./src</directory>
-  </whitelist>
-</filter>
- <logging>
-        <log type="coverage-xml" target="report/" charset="UTF-8" yui="true" />
-	<log type="coverage-html" target="report/" charset="UTF-8" yui="true" />
-<log type="coverage-clover" target="build/logs/clover.xml"/>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-xml" target="report/" charset="UTF-8" yui="true"/>
+        <log type="coverage-html" target="report/" charset="UTF-8" yui="true"/>
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
     </logging>
 </phpunit>
