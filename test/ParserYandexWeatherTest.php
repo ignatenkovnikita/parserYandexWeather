@@ -41,6 +41,20 @@ class ParserYandexWeatherTest extends PHPUnit_Framework_TestCase
     public function testError() {
         $this->assertEmpty($this->parser->getError());
     }
+    public function testSuccess()
+    {
+        $this->assertNotNull($this->parser->getSuccess());
+    }
+
+    public function testLogFormat() {
+        $this->assertNotNull($this->parser->logFormat());
+    }
+
+    public function testEncoding(){
+        $text = \YaWeather\ParseXml::encoding('простой текст');
+
+        $this->assertTrue(mb_detect_encoding($text, 'windows-1251') != 'windows-1251');
+    }
 
 
 
