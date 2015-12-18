@@ -8,3 +8,6 @@ before_script: composer update
 script: ./vendor/bin/phpunit test\
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+addons:
+    code_climate:
+        repo_token: fd8b89fb28fd43e0ceaaa12cdd3e886e1962680edf38f86c8ff813ca2048dde1
